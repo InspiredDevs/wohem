@@ -2,95 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* WOHEM Church Design System - Holy and Spiritual Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 345 30% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 345 30% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 345 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Holy Purple - Primary brand color from logo */
+    --primary: 320 65% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 320 45% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sacred Gold - Secondary brand color from logo */
+    --secondary: 45 90% 60%;
+    --secondary-foreground: 345 30% 15%;
+    --secondary-glow: 45 100% 70%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Blessed variants */
+    --muted: 320 15% 95%;
+    --muted-foreground: 345 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 40% 92%;
+    --accent-foreground: 345 30% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 320 20% 88%;
+    --input: 320 20% 88%;
+    --ring: 320 65% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Divine gradients */
+    --gradient-holy: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-divine: linear-gradient(45deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-blessed: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-radiance: radial-gradient(circle, hsl(var(--secondary-glow) / 0.3), transparent 70%);
+
+    /* Sacred shadows */
+    --shadow-holy: 0 10px 40px -10px hsl(var(--primary) / 0.25);
+    --shadow-divine: 0 20px 60px -15px hsl(var(--secondary) / 0.3);
+    --shadow-blessed: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+
+    /* Smooth transitions */
+    --transition-holy: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-divine: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: 345 30% 15%;
+    --sidebar-primary: 320 65% 35%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 320 15% 95%;
+    --sidebar-accent-foreground: 345 30% 15%;
+    --sidebar-border: 320 20% 88%;
+    --sidebar-ring: 320 65% 35%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 345 30% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 345 25% 12%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 345 25% 12%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 320 60% 65%;
+    --primary-foreground: 345 30% 8%;
+    --primary-glow: 320 50% 75%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 45 80% 70%;
+    --secondary-foreground: 345 30% 8%;
+    --secondary-glow: 45 90% 80%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 345 20% 18%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 345 20% 18%;
+    --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 345 20% 18%;
+    --input: 345 20% 18%;
+    --ring: 320 60% 65%;
+
+    --sidebar-background: 345 25% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 320 60% 65%;
+    --sidebar-primary-foreground: 345 30% 8%;
+    --sidebar-accent: 345 20% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 345 20% 15%;
+    --sidebar-ring: 320 60% 65%;
   }
 }
 
@@ -100,6 +114,100 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Holy animations */
+  .animate-holy-glow {
+    animation: holy-glow 3s ease-in-out infinite alternate;
+  }
+
+  .animate-divine-rise {
+    animation: divine-rise 0.8s ease-out forwards;
+  }
+
+  .animate-blessed-fade {
+    animation: blessed-fade 1.2s ease-out forwards;
+  }
+
+  /* Sacred hover effects */
+  .hover-blessed {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .hover-divine {
+    @apply transition-all duration-500 hover:scale-105 hover:shadow-xl;
+  }
+}
+
+@layer utilities {
+  .text-gradient-holy {
+    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+  }
+
+  .text-gradient-divine {
+    @apply bg-gradient-to-r from-secondary to-secondary-glow bg-clip-text text-transparent;
+  }
+
+  .bg-gradient-holy {
+    background: var(--gradient-holy);
+  }
+
+  .bg-gradient-divine {
+    background: var(--gradient-divine);
+  }
+
+  .bg-gradient-blessed {
+    background: var(--gradient-blessed);
+  }
+
+  .shadow-holy {
+    box-shadow: var(--shadow-holy);
+  }
+
+  .shadow-divine {
+    box-shadow: var(--shadow-divine);
+  }
+
+  .shadow-blessed {
+    box-shadow: var(--shadow-blessed);
+  }
+}
+
+/* Keyframe animations */
+@keyframes holy-glow {
+  0% {
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  100% {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+  }
+}
+
+@keyframes divine-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blessed-fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
