@@ -17,9 +17,16 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="relative bg-gradient-celestial text-primary-foreground overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-ethereal opacity-30 animate-spirit-flow"></div>
+      
+      {/* Floating particles */}
+      <div className="absolute top-8 left-8 w-4 h-4 bg-secondary-glow rounded-full animate-celestial-dance opacity-60"></div>
+      <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-primary-glow rounded-full animate-heavenly-orbit opacity-70"></div>
+      <div className="absolute bottom-8 right-8 w-2 h-2 bg-secondary rounded-full animate-glory-wave opacity-80"></div>
+      
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Church Info */}
           <div className="lg:col-span-2">

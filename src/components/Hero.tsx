@@ -3,10 +3,17 @@ import { ArrowDown, Heart, Users, BookOpen, Star } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-blessed overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-gradient-radiance animate-holy-glow"></div>
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-ethereal overflow-hidden">
+      {/* Animated Background Layers */}
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-gradient-radiance animate-sacred-breathe"></div>
+        <div className="absolute inset-0 bg-gradient-celestial opacity-20 animate-spirit-flow"></div>
+        
+        {/* Floating Particles */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary-glow rounded-full animate-celestial-dance opacity-60"></div>
+        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-secondary-glow rounded-full animate-heavenly-orbit opacity-50"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-primary rounded-full animate-glory-wave opacity-70"></div>
+        <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-secondary rounded-full animate-sacred-breathe opacity-40"></div>
       </div>
 
       {/* Floating Bible Verses */}
@@ -40,13 +47,21 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Welcome to{" "}
-            <span className="text-gradient-holy animate-spirit-flow bg-gradient-to-r from-primary via-primary-glow to-primary bg-[length:200%_auto] bg-clip-text">WOHEM</span>
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight relative">
+            <span className="inline-block animate-glory-wave">Welcome to</span>{" "}
+            <span className="relative inline-block">
+              <span className="text-gradient-celestial animate-divine-shimmer bg-gradient-to-r from-primary-deep via-primary-glow to-secondary bg-[length:300%_auto] bg-clip-text font-black">
+                WOHEM
+              </span>
+              <div className="absolute -inset-2 bg-gradient-heavenly opacity-20 blur-xl animate-sacred-breathe"></div>
+            </span>
           </h1>
           
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-gradient-divine animate-grace-bounce">
-            The Way of Holiness Endtime Ministry
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4 relative">
+            <span className="text-gradient-heavenly animate-grace-bounce bg-[length:200%_auto] font-bold">
+              The Way of Holiness Endtime Ministry
+            </span>
+            <div className="absolute inset-0 bg-gradient-divine opacity-30 blur-lg animate-holy-glow"></div>
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -54,25 +69,34 @@ const Hero = () => {
           </p>
 
           {/* Scripture Quote */}
-          <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-holy border border-border animate-blessed-fade">
-            <div className="flex items-center justify-center mb-3">
-              <Star className="h-5 w-5 text-primary mr-2" />
-              <span className="text-sm font-semibold text-primary">Scripture Foundation</span>
-              <Star className="h-5 w-5 text-primary ml-2" />
+          <div className="relative bg-card/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-divine border-2 border-primary/20 animate-blessed-fade overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-celestial opacity-10 animate-spirit-flow"></div>
+            <div className="relative z-10">
+              <div className="flex items-center justify-center mb-4 animate-sacred-breathe">
+                <Star className="h-6 w-6 text-primary mr-3 animate-heavenly-orbit" />
+                <span className="text-base font-bold text-gradient-holy">Scripture Foundation</span>
+                <Star className="h-6 w-6 text-primary ml-3 animate-heavenly-orbit" />
+              </div>
+              <p className="text-xl italic text-foreground leading-relaxed font-medium mb-4">
+                "And a highway shall be there, and it shall be called the Way of Holiness; 
+                the unclean shall not pass over it, but it shall be for those who walk on the way"
+              </p>
+              <p className="text-base text-gradient-divine font-bold">- Isaiah 35:8 (ESV)</p>
             </div>
-            <p className="text-lg italic text-foreground leading-relaxed">
-              "And a highway shall be there, and it shall be called the Way of Holiness; 
-              the unclean shall not pass over it, but it shall be for those who walk on the way"
-            </p>
-            <p className="text-sm text-primary font-semibold mt-2">- Isaiah 35:8 (ESV)</p>
           </div>
 
           {/* Mission Statement */}
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-holy border border-border animate-blessed-fade">
-            <p className="text-lg md:text-xl text-foreground leading-relaxed">
-              "Empowering people to empower others • Raising future leaders • 
-              Rebuilding families and refining society through the love of Christ"
-            </p>
+          <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-12 shadow-divine border border-primary/30 animate-blessed-fade overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-ethereal animate-glory-wave"></div>
+            <div className="relative z-10">
+              <p className="text-xl md:text-2xl text-foreground leading-relaxed font-semibold text-center">
+                <span className="text-gradient-celestial">"Empowering people to empower others"</span>
+                <span className="text-primary mx-3">•</span>
+                <span className="text-gradient-heavenly">"Raising future leaders"</span>
+                <span className="text-secondary mx-3">•</span>
+                <span className="text-gradient-divine">"Rebuilding families and refining society through the love of Christ"</span>
+              </p>
+            </div>
           </div>
 
           {/* Action Buttons */}

@@ -6,31 +6,33 @@
 
 @layer base {
   :root {
-    --background: 240 8% 96%;
-    --foreground: 240 15% 25%;
+    --background: 245 20% 94%;
+    --foreground: 240 25% 15%;
 
-    --card: 240 8% 98%;
-    --card-foreground: 240 15% 25%;
+    --card: 245 25% 97%;
+    --card-foreground: 240 25% 15%;
 
-    --popover: 240 8% 98%;
-    --popover-foreground: 240 15% 25%;
+    --popover: 245 25% 97%;
+    --popover-foreground: 240 25% 15%;
 
-    /* Gentle Sacred Blue-Purple - Soft and calming */
-    --primary: 250 35% 55%;
-    --primary-foreground: 240 8% 96%;
-    --primary-glow: 250 45% 75%;
+    /* Rich Sacred Purple - Vibrant yet elegant */
+    --primary: 260 60% 45%;
+    --primary-foreground: 245 20% 94%;
+    --primary-glow: 260 70% 65%;
+    --primary-deep: 260 80% 35%;
 
-    /* Warm Earthen Gold - Gentle and accessible */
-    --secondary: 35 40% 65%;
-    --secondary-foreground: 240 15% 25%;
-    --secondary-glow: 35 50% 80%;
+    /* Warm Golden Amber - Rich and welcoming */
+    --secondary: 45 80% 55%;
+    --secondary-foreground: 240 25% 15%;
+    --secondary-glow: 45 90% 70%;
+    --secondary-deep: 45 100% 40%;
 
-    /* Soft blessed variants - Better contrast */
-    --muted: 240 8% 92%;
-    --muted-foreground: 240 12% 45%;
+    /* Enhanced blessed variants */
+    --muted: 245 15% 88%;
+    --muted-foreground: 240 20% 40%;
 
-    --accent: 250 15% 90%;
-    --accent-foreground: 240 15% 25%;
+    --accent: 260 30% 85%;
+    --accent-foreground: 240 25% 15%;
 
     --destructive: 0 50% 60%;
     --destructive-foreground: 240 8% 96%;
@@ -42,11 +44,14 @@
     --radius: 0.75rem;
 
     /* Enhanced divine gradients */
-    --gradient-holy: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-divine: linear-gradient(45deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
-    --gradient-blessed: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
-    --gradient-radiance: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.15), transparent 60%);
-    --gradient-sanctuary: linear-gradient(145deg, hsl(var(--primary) / 0.05), hsl(var(--secondary) / 0.05));
+    --gradient-holy: linear-gradient(135deg, hsl(var(--primary-deep)), hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-divine: linear-gradient(45deg, hsl(var(--secondary-deep)), hsl(var(--secondary)), hsl(var(--secondary-glow)));
+    --gradient-blessed: linear-gradient(180deg, hsl(var(--background)), hsl(var(--accent)));
+    --gradient-radiance: radial-gradient(ellipse at center, hsl(var(--primary-glow) / 0.3), hsl(var(--secondary-glow) / 0.2), transparent 70%);
+    --gradient-sanctuary: linear-gradient(145deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.15));
+    --gradient-celestial: linear-gradient(60deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--primary-glow)));
+    --gradient-heavenly: conic-gradient(from 45deg, hsl(var(--primary)), hsl(var(--primary-glow)), hsl(var(--secondary)), hsl(var(--primary)));
+    --gradient-ethereal: radial-gradient(circle at 30% 70%, hsl(var(--primary) / 0.2), transparent 50%), radial-gradient(circle at 70% 30%, hsl(var(--secondary) / 0.2), transparent 50%);
 
     /* Sacred shadows - Softer and more elegant */
     --shadow-holy: 0 10px 40px -10px hsl(var(--primary) / 0.2);
@@ -70,29 +75,31 @@
   }
 
   .dark {
-    --background: 240 15% 12%;
-    --foreground: 240 8% 85%;
+    --background: 245 25% 8%;
+    --foreground: 245 15% 88%;
 
-    --card: 240 12% 15%;
-    --card-foreground: 240 8% 85%;
+    --card: 245 20% 11%;
+    --card-foreground: 245 15% 88%;
 
-    --popover: 240 12% 15%;
-    --popover-foreground: 240 8% 85%;
+    --popover: 245 20% 11%;
+    --popover-foreground: 245 15% 88%;
 
-    /* Dark mode - Softer and gentler colors */
-    --primary: 250 35% 65%;
-    --primary-foreground: 240 15% 12%;
-    --primary-glow: 250 40% 75%;
+    /* Dark mode - Rich but comfortable colors */
+    --primary: 260 50% 60%;
+    --primary-foreground: 245 25% 8%;
+    --primary-glow: 260 60% 75%;
+    --primary-deep: 260 70% 40%;
 
-    --secondary: 35 35% 60%;
-    --secondary-foreground: 240 15% 12%;
-    --secondary-glow: 35 40% 70%;
+    --secondary: 45 70% 60%;
+    --secondary-foreground: 245 25% 8%;
+    --secondary-glow: 45 80% 75%;
+    --secondary-deep: 45 85% 45%;
 
-    --muted: 240 12% 18%;
-    --muted-foreground: 240 8% 65%;
+    --muted: 245 15% 15%;
+    --muted-foreground: 245 10% 70%;
 
-    --accent: 240 12% 20%;
-    --accent-foreground: 240 8% 85%;
+    --accent: 245 15% 18%;
+    --accent-foreground: 245 15% 88%;
 
     --destructive: 0 50% 65%;
     --destructive-foreground: 240 8% 85%;
@@ -164,6 +171,26 @@
     animation: spirit-flow 5s linear infinite;
   }
 
+  .animate-divine-shimmer {
+    animation: divine-shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-heavenly-orbit {
+    animation: heavenly-orbit 8s linear infinite;
+  }
+
+  .animate-sacred-breathe {
+    animation: sacred-breathe 4s ease-in-out infinite;
+  }
+
+  .animate-glory-wave {
+    animation: glory-wave 6s ease-in-out infinite;
+  }
+
+  .animate-celestial-dance {
+    animation: celestial-dance 10s ease-in-out infinite;
+  }
+
   /* Enhanced sacred hover effects */
   .hover-blessed {
     @apply transition-all duration-500 hover:shadow-lg hover:-translate-y-2 hover:scale-105;
@@ -200,6 +227,16 @@
     @apply bg-gradient-to-br from-primary via-secondary to-primary-glow bg-clip-text text-transparent;
   }
 
+  .text-gradient-celestial {
+    background: var(--gradient-celestial);
+    @apply bg-clip-text text-transparent;
+  }
+
+  .text-gradient-heavenly {
+    background: var(--gradient-heavenly);
+    @apply bg-clip-text text-transparent;
+  }
+
   .bg-gradient-holy {
     background: var(--gradient-holy);
   }
@@ -214,6 +251,18 @@
 
   .bg-gradient-sanctuary {
     background: var(--gradient-sanctuary);
+  }
+
+  .bg-gradient-celestial {
+    background: var(--gradient-celestial);
+  }
+
+  .bg-gradient-heavenly {
+    background: var(--gradient-heavenly);
+  }
+
+  .bg-gradient-ethereal {
+    background: var(--gradient-ethereal);
   }
 
   .shadow-holy {
@@ -337,5 +386,69 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes divine-shimmer {
+  0%, 100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes heavenly-orbit {
+  0% {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+@keyframes sacred-breathe {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.05) rotate(2deg);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes glory-wave {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-20px) scale(1.02);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(10px) scale(0.98);
+    opacity: 0.9;
+  }
+}
+
+@keyframes celestial-dance {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(20px) translateY(-15px) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0px) translateY(-30px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-20px) translateY(-15px) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px) rotate(360deg);
   }
 }

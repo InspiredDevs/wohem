@@ -19,22 +19,23 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border shadow-blessed">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-primary/30 shadow-divine">
       {/* Top Contact Bar */}
-      <div className="bg-gradient-holy text-primary-foreground py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center md:justify-between items-center text-sm gap-4">
+      <div className="relative bg-gradient-celestial text-primary-foreground py-2 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-heavenly opacity-30 animate-spirit-flow"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="flex flex-wrap justify-center md:justify-between items-center text-sm gap-4 animate-blessed-fade">
             <div className="flex items-center gap-4">
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 animate-sacred-breathe">
                 <Phone className="h-4 w-4" />
                 <span>07908 463710</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 animate-sacred-breathe">
                 <Mail className="h-4 w-4" />
                 <span>info@wohem.org</span>
               </div>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 animate-sacred-breathe">
               <MapPin className="h-4 w-4" />
               <span>Bryant Street, Stratford, London E15 4RU</span>
             </div>
@@ -43,17 +44,20 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-4 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
-              alt="WOHEM Church Logo" 
-              className="h-12 w-auto animate-holy-glow"
-            />
+          <div className="flex items-center space-x-3 group hover-blessed">
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
+                alt="WOHEM Church Logo" 
+                className="h-12 w-auto animate-sacred-breathe"
+              />
+              <div className="absolute inset-0 bg-gradient-celestial opacity-20 blur-lg animate-holy-glow"></div>
+            </div>
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-gradient-holy">WOHEM</h1>
+              <h1 className="text-xl font-bold text-gradient-celestial animate-divine-shimmer">WOHEM</h1>
               <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
           </div>
@@ -64,18 +68,20 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-foreground hover:text-primary transition-colors duration-300 font-medium relative ${
+                className={`relative group text-foreground hover:text-primary transition-all duration-500 font-medium ${
                   location.pathname === item.href ? "text-primary" : ""
                 }`}
               >
-                {item.name}
+                <span className="relative z-10 animate-sacred-breathe">{item.name}</span>
+                <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-celestial scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                <div className="absolute inset-0 bg-gradient-sanctuary opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-500 -z-10 animate-glory-wave"></div>
                 {location.pathname === item.href && (
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-holy animate-divine-rise" />
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-celestial animate-divine-rise" />
                 )}
               </Link>
             ))}
             <ThemeToggle />
-            <Button variant="default" className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow">
+            <Button variant="default" className="bg-gradient-celestial hover:opacity-90 transition-opacity animate-sacred-breathe shadow-holy">
               Join Us
             </Button>
           </div>

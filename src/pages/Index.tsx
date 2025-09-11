@@ -154,23 +154,28 @@ const Index = () => {
 
             {/* Call to Action */}
             <div className="text-center mt-16">
-              <div className="bg-gradient-holy text-primary-foreground rounded-2xl p-12 shadow-divine animate-holy-float">
-                <h3 className="text-3xl font-bold mb-6">
-                  Welcome to Our Church Family
-                </h3>
-                <p className="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-                  Experience the transformative power of worship, fellowship, and spiritual growth 
-                  in our vibrant multicultural community.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button variant="secondary" size="lg" className="text-lg px-8 py-4 hover-blessed">
-                    <Heart className="mr-2 h-5 w-5" />
-                    Visit Us This Sunday
-                  </Button>
-                  <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-white/20 text-primary-foreground hover:bg-white/10 hover-blessed">
-                    <BookOpen className="mr-2 h-5 w-5" />
-                    Learn More About WOHEM
-                  </Button>
+              <div className="relative bg-gradient-celestial text-primary-foreground rounded-3xl p-16 shadow-divine animate-holy-float overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-heavenly opacity-30 animate-sacred-breathe"></div>
+                <div className="absolute top-4 left-4 w-6 h-6 bg-secondary-glow rounded-full animate-celestial-dance opacity-70"></div>
+                <div className="absolute bottom-4 right-4 w-8 h-8 bg-primary-glow rounded-full animate-heavenly-orbit opacity-60"></div>
+                <div className="relative z-10">
+                  <h3 className="text-4xl font-bold mb-8 animate-glory-wave">
+                    Welcome to Our Church Family
+                  </h3>
+                  <p className="text-xl mb-10 opacity-95 max-w-2xl mx-auto leading-relaxed animate-divine-rise">
+                    Experience the transformative power of worship, fellowship, and spiritual growth 
+                    in our vibrant multicultural community where every heart finds its home in Christ.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                    <Button variant="secondary" size="lg" className="text-lg px-10 py-6 hover-blessed shadow-holy animate-sacred-breathe">
+                      <Heart className="mr-3 h-6 w-6" />
+                      Visit Us This Sunday
+                    </Button>
+                    <Button variant="outline" size="lg" className="text-lg px-10 py-6 border-white/30 text-primary-foreground hover:bg-white/15 hover-blessed shadow-blessed animate-sacred-breathe">
+                      <BookOpen className="mr-3 h-6 w-6" />
+                      Learn More About WOHEM
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
