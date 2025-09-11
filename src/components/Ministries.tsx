@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Baby, Users, UserCheck, BookOpen, Music, Heart } from "lucide-react";
+import BibleVerse from "./BibleVerse";
 
 const Ministries = () => {
   const ministries = [
@@ -88,12 +89,18 @@ const Ministries = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-blessed-fade">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy animate-spirit-flow bg-gradient-to-r from-primary via-primary-glow to-primary bg-[length:200%_auto] bg-clip-text">
             Our Ministries
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
             Discover the various ministries at WOHEM where you can grow, serve, and make a difference
           </p>
+          
+          <BibleVerse 
+            verse="As each has received a gift, use it to serve one another, as good stewards of God's varied grace"
+            reference="1 Peter 4:10 (ESV)"
+            className="max-w-2xl mx-auto"
+          />
         </div>
 
         {/* Ministries Grid */}
@@ -148,19 +155,37 @@ const Ministries = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { instrument: "Keyboards", level: "All Levels" },
-              { instrument: "Guitar (Bass, Acoustic, Lead)", level: "Beginner to Advanced" },
-              { instrument: "Drums", level: "All Ages" },
-              { instrument: "Percussion", level: "All Levels" }
+              { instrument: "Keyboards", level: "All Levels", image: "/src/assets/keyboard.jpg" },
+              { instrument: "Acoustic Guitar", level: "Beginner to Advanced", image: "/src/assets/acoustic-guitar.jpg" },
+              { instrument: "Bass Guitar", level: "All Levels", image: "/src/assets/bass-guitar.jpg" },
+              { instrument: "Drums", level: "All Ages", image: "/src/assets/drums.jpg" }
             ].map((item, index) => (
-              <div key={index} className="text-center p-6 rounded-xl bg-muted/30 hover-blessed">
-                <div className="bg-gradient-holy text-primary-foreground p-4 rounded-full w-fit mx-auto mb-4">
-                  <Music className="h-6 w-6" />
+              <div key={index} className="text-center p-6 rounded-xl bg-muted/30 hover-blessed group overflow-hidden">
+                <div className="relative mb-4 rounded-lg overflow-hidden shadow-blessed">
+                  <img 
+                    src={item.image} 
+                    alt={item.instrument}
+                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-holy/20 group-hover:bg-gradient-holy/10 transition-all duration-300"></div>
                 </div>
-                <h4 className="font-semibold mb-2">{item.instrument}</h4>
+                <h4 className="font-semibold mb-2 text-gradient-holy">{item.instrument}</h4>
                 <p className="text-sm text-muted-foreground">{item.level}</p>
               </div>
             ))}
+          </div>
+
+          {/* Bible Verse about Music */}
+          <div className="mt-8 p-6 bg-gradient-sanctuary rounded-xl border border-border animate-blessed-fade">
+            <div className="flex items-center justify-center mb-3">
+              <Music className="h-5 w-5 text-primary mr-2 animate-sanctuary-pulse" />
+              <span className="text-sm font-semibold text-primary">Musical Ministry Scripture</span>
+              <Music className="h-5 w-5 text-primary ml-2 animate-sanctuary-pulse" />
+            </div>
+            <p className="text-sm italic text-foreground mb-2">
+              "Let the high praises of God be in their mouth, and a two-edged sword in their hand"
+            </p>
+            <p className="text-xs text-primary font-semibold">- Psalm 149:6 (KJV)</p>
           </div>
 
           <div className="text-center mt-8 p-6 bg-gradient-divine text-secondary-foreground rounded-xl">

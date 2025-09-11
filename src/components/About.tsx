@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, Eye, Users, Globe, BookOpen, Heart } from "lucide-react";
+import BibleVerse from "./BibleVerse";
 
 const About = () => {
   const missions = [
@@ -53,19 +54,25 @@ const About = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16 animate-blessed-fade">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy animate-spirit-flow bg-gradient-to-r from-primary via-primary-glow to-primary bg-[length:200%_auto] bg-clip-text">
             About WOHEM
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
             The Way of Holiness End Time Ministry is a community-based, multicultural Christian church 
             inspired by Isaiah 35:8, dedicated to rebuilding families and refining society.
           </p>
+          
+          <BibleVerse 
+            verse="And a highway shall be there, and a way, and it shall be called The way of holiness; the unclean shall not pass over it; but it shall be for those: the wayfaring men, though fools, shall not err therein"
+            reference="Isaiah 35:8 (KJV)"
+            className="max-w-3xl mx-auto"
+          />
         </div>
 
         {/* About Description */}
         <div className="bg-card rounded-2xl p-8 md:p-12 mb-16 shadow-holy border border-border animate-divine-rise">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-gradient-divine">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-gradient-divine animate-grace-bounce">
               Our Foundation
             </h3>
             <p className="text-lg leading-relaxed text-foreground mb-6">
@@ -73,11 +80,17 @@ const About = () => {
               and a way, and it shall be called The way of holiness." We are committed to creating a 
               path of holiness that leads people to spiritual transformation and community impact.
             </p>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-lg leading-relaxed text-muted-foreground mb-8">
               Our vision is to empower members spiritually, economically, and financially, nurturing 
               their gifts and talents to develop Christian leaders for future generations while 
               making a lasting impact in our communities.
             </p>
+            
+            <BibleVerse 
+              verse="For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope"
+              reference="Jeremiah 29:11 (ESV)"
+              className="max-w-2xl mx-auto"
+            />
           </div>
         </div>
 
@@ -97,13 +110,13 @@ const About = () => {
 
             <div className="space-y-6">
               {missions.map((mission, index) => (
-                <Card key={index} className="hover-blessed border-border shadow-blessed">
+                <Card key={index} className="hover-blessed border-border shadow-blessed animate-divine-rise group">
                   <CardHeader className="pb-4">
                     <div className="flex items-center gap-4">
-                      <div className="bg-gradient-holy text-primary-foreground p-3 rounded-lg">
+                      <div className="bg-gradient-holy text-primary-foreground p-3 rounded-lg group-hover:animate-sanctuary-pulse">
                         <mission.icon className="h-6 w-6" />
                       </div>
-                      <CardTitle className="text-xl">{mission.title}</CardTitle>
+                      <CardTitle className="text-xl group-hover:text-gradient-holy transition-all duration-300">{mission.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -130,13 +143,13 @@ const About = () => {
 
             <div className="space-y-6">
               {visions.map((vision, index) => (
-                <Card key={index} className="hover-blessed border-border shadow-blessed">
+                <Card key={index} className="hover-blessed border-border shadow-blessed animate-blessed-fade group">
                   <CardHeader className="pb-4">
                     <div className="flex items-center gap-4">
-                      <div className="bg-gradient-divine text-secondary-foreground p-3 rounded-lg">
+                      <div className="bg-gradient-divine text-secondary-foreground p-3 rounded-lg group-hover:animate-sanctuary-pulse">
                         <vision.icon className="h-6 w-6" />
                       </div>
-                      <CardTitle className="text-xl">{vision.title}</CardTitle>
+                      <CardTitle className="text-xl group-hover:text-gradient-divine transition-all duration-300">{vision.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>

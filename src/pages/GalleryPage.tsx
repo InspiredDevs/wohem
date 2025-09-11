@@ -1,6 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import BibleVerse from "@/components/BibleVerse";
+import { Camera, Heart } from "lucide-react";
 import worship1 from "@/assets/worship-1.jpg";
 import worship2 from "@/assets/worship-2.jpg";
 import worship3 from "@/assets/worship-3.jpg";
@@ -103,12 +105,18 @@ const GalleryPage = () => {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-blessed-fade">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-holy animate-spirit-flow bg-gradient-to-r from-primary via-primary-glow to-primary bg-[length:200%_auto] bg-clip-text">
                 Worship Gallery
               </h1>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 Witness the beauty of worship and fellowship at WOHEM Church
               </p>
+              
+              <BibleVerse 
+                verse="Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name"
+                reference="Psalm 100:4 (NIV)"
+                className="max-w-2xl mx-auto"
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -135,17 +143,23 @@ const GalleryPage = () => {
             </div>
 
             <div className="text-center mt-16">
-              <Card className="bg-gradient-holy text-primary-foreground p-8 shadow-divine">
+              <Card className="bg-gradient-holy text-primary-foreground p-8 shadow-divine animate-holy-float">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold mb-4">Join Our Worship Experience</h3>
+                  <div className="flex items-center justify-center mb-4">
+                    <Camera className="h-6 w-6 mr-2 animate-grace-bounce" />
+                    <h3 className="text-2xl font-bold">Join Our Worship Experience</h3>
+                    <Heart className="h-6 w-6 ml-2 animate-sanctuary-pulse" />
+                  </div>
                   <p className="text-lg mb-6">
                     Come and be part of our vibrant community where every service is filled with 
                     God's presence, love, and transformative power.
                   </p>
-                  <p className="text-sm opacity-90">
-                    "Enter his gates with thanksgiving and his courts with praise; 
-                    give thanks to him and praise his name." - Psalm 100:4
-                  </p>
+                  <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
+                    <p className="text-sm opacity-90 italic">
+                      "Let everything that has breath praise the Lord. Praise the Lord!"
+                    </p>
+                    <p className="text-xs font-semibold mt-2">- Psalm 150:6 (NIV)</p>
+                  </div>
                 </CardContent>
               </Card>
             </div>

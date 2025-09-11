@@ -6,38 +6,38 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 240 15% 20%;
+    --background: 240 8% 96%;
+    --foreground: 240 15% 25%;
 
-    --card: 0 0% 98%;
-    --card-foreground: 240 15% 20%;
+    --card: 240 8% 98%;
+    --card-foreground: 240 15% 25%;
 
-    --popover: 0 0% 98%;
-    --popover-foreground: 240 15% 20%;
+    --popover: 240 8% 98%;
+    --popover-foreground: 240 15% 25%;
 
-    /* Sacred Purple - Softer and more accessible */
-    --primary: 260 55% 45%;
-    --primary-foreground: 0 0% 98%;
-    --primary-glow: 260 40% 65%;
+    /* Gentle Sacred Blue-Purple - Soft and calming */
+    --primary: 250 35% 55%;
+    --primary-foreground: 240 8% 96%;
+    --primary-glow: 250 45% 75%;
 
-    /* Divine Gold - Warmer and accessible */
-    --secondary: 45 75% 50%;
-    --secondary-foreground: 240 15% 20%;
-    --secondary-glow: 45 85% 65%;
+    /* Warm Earthen Gold - Gentle and accessible */
+    --secondary: 35 40% 65%;
+    --secondary-foreground: 240 15% 25%;
+    --secondary-glow: 35 50% 80%;
 
-    /* Blessed variants - Better contrast */
-    --muted: 240 10% 94%;
-    --muted-foreground: 240 15% 35%;
+    /* Soft blessed variants - Better contrast */
+    --muted: 240 8% 92%;
+    --muted-foreground: 240 12% 45%;
 
-    --accent: 260 20% 92%;
-    --accent-foreground: 240 15% 20%;
+    --accent: 250 15% 90%;
+    --accent-foreground: 240 15% 25%;
 
-    --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 50% 60%;
+    --destructive-foreground: 240 8% 96%;
 
-    --border: 240 15% 85%;
-    --input: 240 15% 90%;
-    --ring: 260 55% 45%;
+    --border: 240 12% 88%;
+    --input: 240 8% 94%;
+    --ring: 250 35% 55%;
 
     --radius: 0.75rem;
 
@@ -70,36 +70,36 @@
   }
 
   .dark {
-    --background: 240 15% 6%;
-    --foreground: 0 0% 95%;
+    --background: 240 15% 12%;
+    --foreground: 240 8% 85%;
 
-    --card: 240 12% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 240 12% 15%;
+    --card-foreground: 240 8% 85%;
 
-    --popover: 240 12% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 240 12% 15%;
+    --popover-foreground: 240 8% 85%;
 
-    /* Dark mode - Better contrast and readability */
-    --primary: 260 45% 70%;
-    --primary-foreground: 240 15% 8%;
-    --primary-glow: 260 50% 80%;
+    /* Dark mode - Softer and gentler colors */
+    --primary: 250 35% 65%;
+    --primary-foreground: 240 15% 12%;
+    --primary-glow: 250 40% 75%;
 
-    --secondary: 45 70% 65%;
-    --secondary-foreground: 240 15% 8%;
-    --secondary-glow: 45 80% 75%;
+    --secondary: 35 35% 60%;
+    --secondary-foreground: 240 15% 12%;
+    --secondary-glow: 35 40% 70%;
 
-    --muted: 240 15% 12%;
-    --muted-foreground: 0 0% 70%;
+    --muted: 240 12% 18%;
+    --muted-foreground: 240 8% 65%;
 
-    --accent: 240 15% 15%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 240 12% 20%;
+    --accent-foreground: 240 8% 85%;
 
-    --destructive: 0 65% 55%;
-    --destructive-foreground: 0 0% 95%;
+    --destructive: 0 50% 65%;
+    --destructive-foreground: 240 8% 85%;
 
-    --border: 240 15% 18%;
-    --input: 240 15% 15%;
-    --ring: 260 45% 70%;
+    --border: 240 12% 22%;
+    --input: 240 12% 18%;
+    --ring: 250 35% 65%;
 
     /* Dark mode gradients */
     --gradient-radiance: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.2), transparent 60%);
@@ -150,6 +150,18 @@
 
   .animate-holy-float {
     animation: holy-float 6s ease-in-out infinite;
+  }
+
+  .animate-verse-slide {
+    animation: verse-slide 2s ease-in-out infinite alternate;
+  }
+
+  .animate-grace-bounce {
+    animation: grace-bounce 3s ease-in-out infinite;
+  }
+
+  .animate-spirit-flow {
+    animation: spirit-flow 5s linear infinite;
   }
 
   /* Enhanced sacred hover effects */
@@ -290,5 +302,40 @@
   }
   75% {
     transform: translateY(-15px) rotate(-1deg);
+  }
+}
+
+@keyframes verse-slide {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+}
+
+@keyframes grace-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes spirit-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

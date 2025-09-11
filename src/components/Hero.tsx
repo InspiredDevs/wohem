@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Heart, Users, BookOpen } from "lucide-react";
+import { ArrowDown, Heart, Users, BookOpen, Star } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -7,6 +7,25 @@ const Hero = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-gradient-radiance animate-holy-glow"></div>
+      </div>
+
+      {/* Floating Bible Verses */}
+      <div className="absolute top-20 left-10 animate-verse-slide">
+        <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
+          <p className="text-xs text-muted-foreground italic">
+            "And a highway shall be there, and it shall be called the Way of Holiness" 
+            <span className="text-primary font-semibold"> - Isaiah 35:8</span>
+          </p>
+        </div>
+      </div>
+      
+      <div className="absolute top-32 right-10 animate-verse-slide delay-1000">
+        <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
+          <p className="text-xs text-muted-foreground italic">
+            "Be strong and courageous! Do not be afraid" 
+            <span className="text-primary font-semibold"> - Joshua 1:9</span>
+          </p>
+        </div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
@@ -23,10 +42,10 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Welcome to{" "}
-            <span className="text-gradient-holy">WOHEM</span>
+            <span className="text-gradient-holy animate-spirit-flow bg-gradient-to-r from-primary via-primary-glow to-primary bg-[length:200%_auto] bg-clip-text">WOHEM</span>
           </h1>
           
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-gradient-divine">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-gradient-divine animate-grace-bounce">
             The Way of Holiness Endtime Ministry
           </h2>
           
@@ -34,8 +53,22 @@ const Hero = () => {
             House of Praise • A multicultural Christian community in Stratford, London
           </p>
 
+          {/* Scripture Quote */}
+          <div className="bg-card/90 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-holy border border-border animate-blessed-fade">
+            <div className="flex items-center justify-center mb-3">
+              <Star className="h-5 w-5 text-primary mr-2" />
+              <span className="text-sm font-semibold text-primary">Scripture Foundation</span>
+              <Star className="h-5 w-5 text-primary ml-2" />
+            </div>
+            <p className="text-lg italic text-foreground leading-relaxed">
+              "And a highway shall be there, and it shall be called the Way of Holiness; 
+              the unclean shall not pass over it, but it shall be for those who walk on the way"
+            </p>
+            <p className="text-sm text-primary font-semibold mt-2">- Isaiah 35:8 (ESV)</p>
+          </div>
+
           {/* Mission Statement */}
-          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-holy border border-border">
+          <div className="bg-card/80 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-holy border border-border animate-blessed-fade">
             <p className="text-lg md:text-xl text-foreground leading-relaxed">
               "Empowering people to empower others • Raising future leaders • 
               Rebuilding families and refining society through the love of Christ"
