@@ -6,26 +6,26 @@
 
 @layer base {
   :root {
-    --background: 245 20% 94%;
-    --foreground: 240 25% 15%;
+    --background: 245 15% 96%;
+    --foreground: 235 30% 18%;
 
-    --card: 245 25% 97%;
-    --card-foreground: 240 25% 15%;
+    --card: 245 20% 98%;
+    --card-foreground: 235 25% 18%;
 
-    --popover: 245 25% 97%;
-    --popover-foreground: 240 25% 15%;
+    --popover: 245 20% 98%;
+    --popover-foreground: 235 25% 18%;
 
-    /* Rich Sacred Purple - Vibrant yet elegant */
-    --primary: 260 60% 45%;
-    --primary-foreground: 245 20% 94%;
-    --primary-glow: 260 70% 65%;
-    --primary-deep: 260 80% 35%;
+    /* Deep Professional Blue-Purple */
+    --primary: 248 40% 35%;
+    --primary-foreground: 245 15% 96%;
+    --primary-glow: 248 50% 55%;
+    --primary-deep: 248 60% 25%;
 
-    /* Warm Golden Amber - Rich and welcoming */
-    --secondary: 45 80% 55%;
-    --secondary-foreground: 240 25% 15%;
-    --secondary-glow: 45 90% 70%;
-    --secondary-deep: 45 100% 40%;
+    /* Elegant Indigo Secondary */
+    --secondary: 258 35% 45%;
+    --secondary-foreground: 245 15% 96%;
+    --secondary-glow: 258 45% 65%;
+    --secondary-deep: 258 55% 35%;
 
     /* Enhanced blessed variants */
     --muted: 245 15% 88%;
@@ -75,25 +75,25 @@
   }
 
   .dark {
-    --background: 245 25% 8%;
-    --foreground: 245 15% 88%;
+    --background: 235 25% 6%;
+    --foreground: 245 10% 85%;
 
-    --card: 245 20% 11%;
-    --card-foreground: 245 15% 88%;
+    --card: 235 20% 9%;
+    --card-foreground: 245 10% 85%;
 
-    --popover: 245 20% 11%;
-    --popover-foreground: 245 15% 88%;
+    --popover: 235 20% 9%;
+    --popover-foreground: 245 10% 85%;
 
-    /* Dark mode - Rich but comfortable colors */
-    --primary: 260 50% 60%;
-    --primary-foreground: 245 25% 8%;
-    --primary-glow: 260 60% 75%;
-    --primary-deep: 260 70% 40%;
+    /* Dark mode - Professional and comfortable */
+    --primary: 248 35% 55%;
+    --primary-foreground: 235 25% 6%;
+    --primary-glow: 248 45% 70%;
+    --primary-deep: 248 50% 40%;
 
-    --secondary: 45 70% 60%;
-    --secondary-foreground: 245 25% 8%;
-    --secondary-glow: 45 80% 75%;
-    --secondary-deep: 45 85% 45%;
+    --secondary: 258 30% 60%;
+    --secondary-foreground: 235 25% 6%;
+    --secondary-glow: 258 40% 75%;
+    --secondary-deep: 258 45% 50%;
 
     --muted: 245 15% 15%;
     --muted-foreground: 245 10% 70%;

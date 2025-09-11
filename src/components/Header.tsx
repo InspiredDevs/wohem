@@ -52,12 +52,11 @@ const Header = () => {
               <img 
                 src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
                 alt="WOHEM Church Logo" 
-                className="h-12 w-auto animate-sacred-breathe"
+                className="h-12 w-auto"
               />
-              <div className="absolute inset-0 bg-gradient-celestial opacity-20 blur-lg animate-holy-glow"></div>
             </div>
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-gradient-celestial animate-divine-shimmer">WOHEM</h1>
+              <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
               <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
           </div>
@@ -72,7 +71,7 @@ const Header = () => {
                   location.pathname === item.href ? "text-primary" : ""
                 }`}
               >
-                <span className="relative z-10 animate-sacred-breathe">{item.name}</span>
+                <span className="relative z-10">{item.name}</span>
                 <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-celestial scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                 <div className="absolute inset-0 bg-gradient-sanctuary opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-500 -z-10 animate-glory-wave"></div>
                 {location.pathname === item.href && (
