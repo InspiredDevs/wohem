@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Crown, Heart, BookOpen, Music, Trophy } from "lucide-react";
+import { Crown, Heart, BookOpen, Eye, Users } from "lucide-react";
+import pastorImage from "@/assets/pastor-emmanuel.jpg";
 
 const Pastor = () => {
   const ministryRoles = [
@@ -10,12 +11,6 @@ const Pastor = () => {
     { role: "Evangelist", icon: Users }
   ];
 
-  const interests = [
-    { name: "Singing", icon: Music },
-    { name: "Drumming", icon: Music },
-    { name: "Teaching", icon: BookOpen },
-    { name: "Sports", icon: Trophy }
-  ];
 
   return (
     <section id="pastor" className="py-20 bg-gradient-blessed">
@@ -37,8 +32,12 @@ const Pastor = () => {
               <Card className="border-border shadow-holy">
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
-                    <div className="w-32 h-32 bg-gradient-holy rounded-full mx-auto mb-6 flex items-center justify-center shadow-divine">
-                      <Crown className="h-16 w-16 text-primary-foreground" />
+                    <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-divine animate-holy-glow">
+                      <img 
+                        src={pastorImage} 
+                        alt="Pastor Emmanuel Dare Olafisoye" 
+                        className="w-full h-full object-cover hover-divine"
+                      />
                     </div>
                     <h3 className="text-3xl font-bold text-gradient-holy mb-2">
                       Pastor Emmanuel Dare Olafisoye
@@ -72,10 +71,10 @@ const Pastor = () => {
               </Card>
             </div>
 
-            {/* Five-Fold Ministry & Interests */}
+            {/* Five-Fold Ministry & Quote */}
             <div className="space-y-8 animate-blessed-fade">
               {/* Five-Fold Ministry */}
-              <Card className="border-border shadow-blessed">
+              <Card className="border-border shadow-blessed animate-divine-rise">
                 <CardContent className="p-8">
                   <h4 className="text-2xl font-bold text-gradient-divine mb-6 text-center">
                     Five-Fold Ministry
@@ -85,8 +84,8 @@ const Pastor = () => {
                   </p>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {ministryRoles.map((ministry, index) => (
-                      <div key={index} className="text-center p-4 rounded-lg bg-muted/30 hover-blessed">
-                        <div className="bg-gradient-holy text-primary-foreground p-3 rounded-full mx-auto mb-3 w-fit">
+                      <div key={index} className="text-center p-4 rounded-lg bg-muted/30 hover-blessed animate-blessed-fade">
+                        <div className="bg-gradient-holy text-primary-foreground p-3 rounded-full mx-auto mb-3 w-fit animate-holy-glow">
                           <ministry.icon className="h-6 w-6" />
                         </div>
                         <p className="font-semibold text-sm">{ministry.role}</p>
@@ -96,34 +95,31 @@ const Pastor = () => {
                 </CardContent>
               </Card>
 
-              {/* Personal Interests */}
-              <Card className="border-border shadow-blessed">
-                <CardContent className="p-8">
-                  <h4 className="text-2xl font-bold text-gradient-holy mb-6 text-center">
-                    Personal Interests
-                  </h4>
-                  <div className="grid grid-cols-2 gap-4">
-                    {interests.map((interest, index) => (
-                      <div key={index} className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 hover-blessed">
-                        <div className="bg-gradient-divine text-secondary-foreground p-2 rounded-lg">
-                          <interest.icon className="h-5 w-5" />
-                        </div>
-                        <span className="font-medium">{interest.name}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
               {/* Quote */}
-              <Card className="border-border shadow-holy bg-gradient-holy text-primary-foreground">
+              <Card className="border-border shadow-holy bg-gradient-holy text-primary-foreground animate-blessed-fade">
                 <CardContent className="p-8 text-center">
-                  <blockquote className="text-lg italic leading-relaxed">
+                  <blockquote className="text-lg italic leading-relaxed mb-4">
                     "Through prayer and the Word of God, we can deliver people from every 
                     form of oppression and lead them into their divine destiny."
                   </blockquote>
-                  <cite className="block mt-4 font-semibold not-italic">
+                  <cite className="block font-semibold not-italic">
                     - Pastor Emmanuel Dare Olafisoye
+                  </cite>
+                </CardContent>
+              </Card>
+
+              {/* Scripture Foundation */}
+              <Card className="border-border shadow-blessed bg-gradient-divine text-secondary-foreground animate-divine-rise">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-4">
+                    <Crown className="h-12 w-12 mx-auto mb-4 animate-holy-glow" />
+                    <h4 className="text-xl font-bold mb-4">Biblical Foundation</h4>
+                  </div>
+                  <blockquote className="text-lg italic leading-relaxed mb-4">
+                    "And a highway shall be there, and a way, and it shall be called The way of holiness"
+                  </blockquote>
+                  <cite className="block font-semibold not-italic text-sm">
+                    - Isaiah 35:8 (KJV)
                   </cite>
                 </CardContent>
               </Card>
@@ -134,8 +130,5 @@ const Pastor = () => {
     </section>
   );
 };
-
-// Import missing icons
-import { Eye, Users } from "lucide-react";
 
 export default Pastor;

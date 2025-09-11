@@ -2,109 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-/* WOHEM Church Design System - Holy and Spiritual Theme */
+/* WOHEM Church Design System - Accessible Holy Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 345 30% 15%;
+    --background: 0 0% 99%;
+    --foreground: 240 15% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 345 30% 15%;
+    --card: 0 0% 98%;
+    --card-foreground: 240 15% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 345 30% 15%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 240 15% 20%;
 
-    /* Holy Purple - Primary brand color from logo */
-    --primary: 320 65% 35%;
+    /* Sacred Purple - Softer and more accessible */
+    --primary: 260 55% 45%;
     --primary-foreground: 0 0% 98%;
-    --primary-glow: 320 45% 55%;
+    --primary-glow: 260 40% 65%;
 
-    /* Sacred Gold - Secondary brand color from logo */
-    --secondary: 45 90% 60%;
-    --secondary-foreground: 345 30% 15%;
-    --secondary-glow: 45 100% 70%;
+    /* Divine Gold - Warmer and accessible */
+    --secondary: 45 75% 50%;
+    --secondary-foreground: 240 15% 20%;
+    --secondary-glow: 45 85% 65%;
 
-    /* Blessed variants */
-    --muted: 320 15% 95%;
-    --muted-foreground: 345 20% 45%;
+    /* Blessed variants - Better contrast */
+    --muted: 240 10% 94%;
+    --muted-foreground: 240 15% 35%;
 
-    --accent: 45 40% 92%;
-    --accent-foreground: 345 30% 15%;
+    --accent: 260 20% 92%;
+    --accent-foreground: 240 15% 20%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 320 20% 88%;
-    --input: 320 20% 88%;
-    --ring: 320 65% 35%;
+    --border: 240 15% 85%;
+    --input: 240 15% 90%;
+    --ring: 260 55% 45%;
 
     --radius: 0.75rem;
 
-    /* Divine gradients */
+    /* Enhanced divine gradients */
     --gradient-holy: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
     --gradient-divine: linear-gradient(45deg, hsl(var(--secondary)), hsl(var(--secondary-glow)));
     --gradient-blessed: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
-    --gradient-radiance: radial-gradient(circle, hsl(var(--secondary-glow) / 0.3), transparent 70%);
+    --gradient-radiance: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.15), transparent 60%);
+    --gradient-sanctuary: linear-gradient(145deg, hsl(var(--primary) / 0.05), hsl(var(--secondary) / 0.05));
 
-    /* Sacred shadows */
-    --shadow-holy: 0 10px 40px -10px hsl(var(--primary) / 0.25);
-    --shadow-divine: 0 20px 60px -15px hsl(var(--secondary) / 0.3);
-    --shadow-blessed: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    /* Sacred shadows - Softer and more elegant */
+    --shadow-holy: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    --shadow-divine: 0 20px 60px -15px hsl(var(--secondary) / 0.25);
+    --shadow-blessed: 0 4px 20px -4px hsl(var(--primary) / 0.12);
+    --shadow-sanctuary: 0 2px 10px -2px hsl(var(--primary) / 0.08);
 
-    /* Smooth transitions */
-    --transition-holy: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-divine: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* Smooth spiritual transitions */
+    --transition-holy: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-divine: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-blessed: all 0.3s ease-out;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 345 30% 15%;
-    --sidebar-primary: 320 65% 35%;
+    --sidebar-background: 0 0% 99%;
+    --sidebar-foreground: 240 15% 20%;
+    --sidebar-primary: 260 55% 45%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 320 15% 95%;
-    --sidebar-accent-foreground: 345 30% 15%;
-    --sidebar-border: 320 20% 88%;
-    --sidebar-ring: 320 65% 35%;
+    --sidebar-accent: 240 10% 94%;
+    --sidebar-accent-foreground: 240 15% 20%;
+    --sidebar-border: 240 15% 85%;
+    --sidebar-ring: 260 55% 45%;
   }
 
   .dark {
-    --background: 345 30% 8%;
+    --background: 240 15% 6%;
     --foreground: 0 0% 95%;
 
-    --card: 345 25% 12%;
+    --card: 240 12% 8%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 345 25% 12%;
+    --popover: 240 12% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 320 60% 65%;
-    --primary-foreground: 345 30% 8%;
-    --primary-glow: 320 50% 75%;
+    /* Dark mode - Better contrast and readability */
+    --primary: 260 45% 70%;
+    --primary-foreground: 240 15% 8%;
+    --primary-glow: 260 50% 80%;
 
-    --secondary: 45 80% 70%;
-    --secondary-foreground: 345 30% 8%;
-    --secondary-glow: 45 90% 80%;
+    --secondary: 45 70% 65%;
+    --secondary-foreground: 240 15% 8%;
+    --secondary-glow: 45 80% 75%;
 
-    --muted: 345 20% 18%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 240 15% 12%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 345 20% 18%;
+    --accent: 240 15% 15%;
     --accent-foreground: 0 0% 95%;
 
-    --destructive: 0 75% 55%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 345 20% 18%;
-    --input: 345 20% 18%;
-    --ring: 320 60% 65%;
+    --border: 240 15% 18%;
+    --input: 240 15% 15%;
+    --ring: 260 45% 70%;
 
-    --sidebar-background: 345 25% 10%;
+    /* Dark mode gradients */
+    --gradient-radiance: radial-gradient(circle at center, hsl(var(--primary-glow) / 0.2), transparent 60%);
+    --gradient-sanctuary: linear-gradient(145deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1));
+
+    --sidebar-background: 240 12% 6%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 320 60% 65%;
-    --sidebar-primary-foreground: 345 30% 8%;
-    --sidebar-accent: 345 20% 15%;
+    --sidebar-primary: 260 45% 70%;
+    --sidebar-primary-foreground: 240 15% 8%;
+    --sidebar-accent: 240 15% 12%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 345 20% 15%;
-    --sidebar-ring: 320 60% 65%;
+    --sidebar-border: 240 15% 15%;
+    --sidebar-ring: 260 45% 70%;
   }
 }
 
@@ -123,36 +131,61 @@
 }
 
 @layer components {
-  /* Holy animations */
+  /* Enhanced holy animations */
   .animate-holy-glow {
-    animation: holy-glow 3s ease-in-out infinite alternate;
+    animation: holy-glow 4s ease-in-out infinite alternate;
   }
 
   .animate-divine-rise {
-    animation: divine-rise 0.8s ease-out forwards;
+    animation: divine-rise 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
 
   .animate-blessed-fade {
-    animation: blessed-fade 1.2s ease-out forwards;
+    animation: blessed-fade 1s ease-out forwards;
   }
 
-  /* Sacred hover effects */
+  .animate-sanctuary-pulse {
+    animation: sanctuary-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-holy-float {
+    animation: holy-float 6s ease-in-out infinite;
+  }
+
+  /* Enhanced sacred hover effects */
   .hover-blessed {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-lg hover:-translate-y-2 hover:scale-105;
   }
 
   .hover-divine {
-    @apply transition-all duration-500 hover:scale-105 hover:shadow-xl;
+    @apply transition-all duration-700 hover:scale-110 hover:shadow-xl hover:rotate-1;
+  }
+
+  .hover-sanctuary {
+    @apply transition-all duration-300 hover:shadow-blessed hover:bg-gradient-sanctuary;
+  }
+
+  /* Scroll animations */
+  .animate-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+
+  .animate-on-scroll.in-view {
+    @apply opacity-100 translate-y-0;
   }
 }
 
 @layer utilities {
   .text-gradient-holy {
-    @apply bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-primary-glow to-primary bg-clip-text text-transparent;
   }
 
   .text-gradient-divine {
-    @apply bg-gradient-to-r from-secondary to-secondary-glow bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-secondary via-secondary-glow to-secondary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-sanctuary {
+    @apply bg-gradient-to-br from-primary via-secondary to-primary-glow bg-clip-text text-transparent;
   }
 
   .bg-gradient-holy {
@@ -167,6 +200,10 @@
     background: var(--gradient-blessed);
   }
 
+  .bg-gradient-sanctuary {
+    background: var(--gradient-sanctuary);
+  }
+
   .shadow-holy {
     box-shadow: var(--shadow-holy);
   }
@@ -178,36 +215,80 @@
   .shadow-blessed {
     box-shadow: var(--shadow-blessed);
   }
+
+  .shadow-sanctuary {
+    box-shadow: var(--shadow-sanctuary);
+  }
 }
 
-/* Keyframe animations */
+/* Enhanced keyframe animations */
 @keyframes holy-glow {
   0% {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.4);
+    filter: brightness(1);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--primary-glow) / 0.6), 0 0 60px hsl(var(--primary) / 0.3);
+    filter: brightness(1.1);
   }
   100% {
-    box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.5);
+    filter: brightness(1);
   }
 }
 
 @keyframes divine-rise {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px) scale(0.95);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(20px) scale(0.98);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
 @keyframes blessed-fade {
   0% {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9) rotateX(10deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.95) rotateX(5deg);
   }
   100% {
     opacity: 1;
+    transform: scale(1) rotateX(0deg);
+  }
+}
+
+@keyframes sanctuary-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.4);
     transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px hsl(var(--primary) / 0);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes holy-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-1deg);
   }
 }
