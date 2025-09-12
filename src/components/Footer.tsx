@@ -140,7 +140,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-75">
-              © 2024 WOHEM Church - The Way of Holiness Endtime Ministry. All rights reserved.
+              © 2025 WOHEM Church - The Way of Holiness Endtime Ministry. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-sm opacity-75">
               <span>Made with</span>

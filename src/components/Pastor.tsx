@@ -32,11 +32,11 @@ const Pastor = () => {
               <Card className="border-border shadow-holy">
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
-                    <div className="w-32 h-32 rounded-full mx-auto mb-6 overflow-hidden shadow-divine animate-holy-glow">
+                    <div className="w-48 h-48 rounded-full mx-auto mb-6 overflow-hidden shadow-divine">
                       <img 
                         src={pastorImage} 
                         alt="Pastor Emmanuel Dare Olafisoye" 
-                        className="w-full h-full object-cover hover-divine"
+                        className="w-full h-full object-cover object-top scale-110"
                       />
                     </div>
                     <h3 className="text-3xl font-bold text-gradient-holy mb-2">

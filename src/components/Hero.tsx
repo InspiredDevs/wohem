@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
 
       {/* Floating Bible Verses */}
-      <div className="absolute top-20 left-10 animate-verse-slide">
+      <div className="absolute top-1/2 left-10 animate-verse-slide hidden lg:block">
         <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
           <p className="text-xs text-muted-foreground italic">
             "And a highway shall be there, and it shall be called the Way of Holiness" 
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute top-32 right-10 animate-verse-slide delay-1000">
+      <div className="absolute top-3/4 right-10 animate-verse-slide delay-1000 hidden lg:block">
         <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
           <p className="text-xs text-muted-foreground italic">
             "Be strong and courageous! Do not be afraid" 
@@ -81,16 +81,39 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Mission Statement */}
-          <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-12 shadow-divine border border-primary/30 overflow-hidden">
+          {/* Vision Statement */}
+          <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-8 shadow-divine border border-primary/30 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-ethereal animate-glory-wave"></div>
             <div className="relative z-10">
+              <div className="flex items-center justify-center mb-6">
+                <Star className="h-6 w-6 text-primary mr-3" />
+                <span className="text-lg font-bold text-gradient-holy">Our Vision</span>
+                <Star className="h-6 w-6 text-primary ml-3" />
+              </div>
               <p className="text-xl md:text-2xl text-foreground leading-relaxed font-semibold text-center">
                 <span className="text-gradient-celestial">"Empowering people to empower others"</span>
                 <span className="text-primary mx-3">•</span>
                 <span className="text-gradient-heavenly">"Raising future leaders"</span>
                 <span className="text-secondary mx-3">•</span>
                 <span className="text-gradient-divine">"Rebuilding families and refining society through the love of Christ"</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Mission Statement */}
+          <div className="relative bg-gradient-holy backdrop-blur-md rounded-3xl p-10 mb-12 shadow-divine border border-primary/30 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-celestial opacity-10"></div>
+            <div className="relative z-10 text-primary-foreground">
+              <div className="flex items-center justify-center mb-6">
+                <BookOpen className="h-6 w-6 mr-3" />
+                <span className="text-lg font-bold">Our Mission</span>
+                <BookOpen className="h-6 w-6 ml-3" />
+              </div>
+              <p className="text-lg md:text-xl leading-relaxed text-center">
+                The Way of Holiness End Time Ministry (WOHEM) is a ministry raised by God with 
+                a definite word found in Isaiah 35:8. It is a divinely ordained ministry to rebuild families, 
+                refine society, make impact on communities, reaching to the nations at large and 
+                bringing the church back to its initial position.
               </p>
             </div>
           </div>

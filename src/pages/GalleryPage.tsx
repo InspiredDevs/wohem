@@ -3,14 +3,14 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import BibleVerse from "@/components/BibleVerse";
 import { Camera, Heart } from "lucide-react";
-import worship1 from "@/assets/worship-1.jpg";
-import worship2 from "@/assets/worship-2.jpg";
-import worship3 from "@/assets/worship-3.jpg";
-import worship4 from "@/assets/worship-4.jpg";
-import worship5 from "@/assets/worship-5.jpg";
-import worship6 from "@/assets/worship-6.jpg";
-import worship7 from "@/assets/worship-7.jpg";
-import worship8 from "@/assets/worship-8.jpg";
+import worship1 from "@/assets/worship-16.jpg";
+import worship2 from "@/assets/worship-17.jpg";
+import worship3 from "@/assets/worship-18.jpg";
+import worship4 from "@/assets/worship-19.jpg";
+import worship5 from "@/assets/worship-20.jpg";
+import worship6 from "@/assets/worship-21.jpg";
+import worship7 from "@/assets/worship-22.jpg";
+import worship8 from "@/assets/worship-23.jpg";
 import worship9 from "@/assets/worship-9.jpg";
 import worship10 from "@/assets/worship-10.jpg";
 import worship11 from "@/assets/worship-11.jpg";
@@ -23,42 +23,42 @@ const GalleryPage = () => {
   const worshipImages = [
     {
       src: worship1,
-      title: "Praising Together",
-      description: "Our congregation lifting hands in unified worship and praise to God"
+      title: "Fellowship & Community",
+      description: "Our church family gathering together in love and unity"
     },
     {
       src: worship2,
-      title: "Prayer Circle",
-      description: "Community prayer time, holding hands in fellowship and faith"
+      title: "Pastoral Ministry",
+      description: "Pastor Emmanuel ministering with anointing and spiritual authority"
     },
     {
       src: worship3,
-      title: "Choir Ministry",
-      description: "Our choir leading the congregation in spirit-filled worship songs"
+      title: "Worship & Praise",
+      description: "Congregation lifting hands in unified worship and praise to God"
     },
     {
       src: worship4,
-      title: "Baptism Service", 
-      description: "Sacred baptism ceremony celebrating new life in Christ"
+      title: "Prophetic Ministry",
+      description: "Ministering under the anointing with prophetic utterances"
     },
     {
       src: worship5,
-      title: "Children's Ministry",
-      description: "Teaching our children about God's love through engaging Bible stories"
+      title: "Church Celebration",
+      description: "Celebrating God's goodness together as one church family"
     },
     {
       src: worship6,
-      title: "Holy Communion",
-      description: "Partaking in the Lord's Supper together as one body in Christ"
+      title: "Musical Worship",
+      description: "Our musicians creating an atmosphere of worship through sacred music"
     },
     {
       src: worship7,
-      title: "Women's Fellowship",
-      description: "Sisters in Christ studying God's Word and encouraging one another"
+      title: "Community & Children",
+      description: "Welcoming families and children into our loving church community"
     },
     {
       src: worship8,
-      title: "Men's Ministry",
+      title: "Men's Fellowship",
       description: "Brothers gathering for fellowship, prayer, and spiritual growth"
     },
     {
