@@ -35,8 +35,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-4xl mx-auto animate-divine-rise">
+        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
             <img 
@@ -47,21 +47,17 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight relative">
-            <span className="inline-block animate-glory-wave">Welcome to</span>{" "}
-            <span className="relative inline-block">
-              <span className="text-gradient-celestial animate-divine-shimmer bg-gradient-to-r from-primary-deep via-primary-glow to-secondary bg-[length:300%_auto] bg-clip-text font-black">
-                WOHEM
-              </span>
-              <div className="absolute -inset-2 bg-gradient-heavenly opacity-20 blur-xl animate-sacred-breathe"></div>
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+            <span className="inline-block">Welcome to</span>{" "}
+            <span className="text-gradient-celestial bg-gradient-to-r from-primary-deep via-primary-glow to-secondary bg-clip-text font-black">
+              WOHEM
             </span>
           </h1>
           
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4 relative">
-            <span className="text-gradient-heavenly animate-grace-bounce bg-[length:200%_auto] font-bold">
+          <h2 className="text-2xl md:text-4xl font-semibold mb-4">
+            <span className="text-gradient-heavenly font-bold">
               The Way of Holiness Endtime Ministry
             </span>
-            <div className="absolute inset-0 bg-gradient-divine opacity-30 blur-lg animate-holy-glow"></div>
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -69,7 +65,7 @@ const Hero = () => {
           </p>
 
           {/* Scripture Quote */}
-          <div className="relative bg-card/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-divine border-2 border-primary/20 animate-blessed-fade overflow-hidden">
+          <div className="relative bg-card/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-divine border-2 border-primary/20 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-celestial opacity-10 animate-spirit-flow"></div>
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-4 animate-sacred-breathe">
@@ -86,7 +82,7 @@ const Hero = () => {
           </div>
 
           {/* Mission Statement */}
-          <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-12 shadow-divine border border-primary/30 animate-blessed-fade overflow-hidden">
+          <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-12 shadow-divine border border-primary/30 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-ethereal animate-glory-wave"></div>
             <div className="relative z-10">
               <p className="text-xl md:text-2xl text-foreground leading-relaxed font-semibold text-center">
@@ -157,9 +153,7 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="animate-bounce">
-            <ArrowDown className="h-6 w-6 text-primary" />
-          </div>
+          <ArrowDown className="h-6 w-6 text-primary" />
         </div>
       </div>
     </section>

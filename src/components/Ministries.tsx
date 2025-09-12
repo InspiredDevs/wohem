@@ -155,10 +155,10 @@ const Ministries = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { instrument: "Keyboards", level: "All Levels", image: "/src/assets/keyboard.jpg" },
-              { instrument: "Acoustic Guitar", level: "Beginner to Advanced", image: "/src/assets/acoustic-guitar.jpg" },
-              { instrument: "Bass Guitar", level: "All Levels", image: "/src/assets/bass-guitar.jpg" },
-              { instrument: "Drums", level: "All Ages", image: "/src/assets/drums.jpg" }
+              { instrument: "Keyboards", level: "All Levels", image: "/lovable-uploads/keyboard.jpg" },
+              { instrument: "Acoustic Guitar", level: "Beginner to Advanced", image: "/lovable-uploads/acoustic-guitar.jpg" },
+              { instrument: "Bass Guitar", level: "All Levels", image: "/lovable-uploads/bass-guitar.jpg" },
+              { instrument: "Drums", level: "All Ages", image: "/lovable-uploads/drums.jpg" }
             ].map((item, index) => (
               <div key={index} className="text-center p-6 rounded-xl bg-muted/30 hover-blessed group overflow-hidden">
                 <div className="relative mb-4 rounded-lg overflow-hidden shadow-blessed">

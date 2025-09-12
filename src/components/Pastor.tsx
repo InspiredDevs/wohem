@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Crown, Heart, BookOpen, Eye, Users } from "lucide-react";
-import pastorImage from "/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png";
+import pastorImage from "/pastor-emmanuel.jpg";
 
 const Pastor = () => {
   const ministryRoles = [
