@@ -4,35 +4,10 @@ import { ArrowDown, Heart, Users, BookOpen, Star } from "lucide-react";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-gradient-ethereal overflow-hidden">
-      {/* Animated Background Layers */}
+      {/* Background Layers */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-radiance animate-sacred-breathe"></div>
-        <div className="absolute inset-0 bg-gradient-celestial opacity-20 animate-spirit-flow"></div>
-        
-        {/* Floating Particles */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary-glow rounded-full animate-celestial-dance opacity-60"></div>
-        <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-secondary-glow rounded-full animate-heavenly-orbit opacity-50"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-primary rounded-full animate-glory-wave opacity-70"></div>
-        <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-secondary rounded-full animate-sacred-breathe opacity-40"></div>
-      </div>
-
-      {/* Floating Bible Verses */}
-      <div className="absolute top-1/2 left-10 animate-verse-slide hidden lg:block">
-        <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
-          <p className="text-xs text-muted-foreground italic">
-            "And a highway shall be there, and it shall be called the Way of Holiness" 
-            <span className="text-primary font-semibold"> - Isaiah 35:8</span>
-          </p>
-        </div>
-      </div>
-      
-      <div className="absolute top-3/4 right-10 animate-verse-slide delay-1000 hidden lg:block">
-        <div className="bg-card/70 backdrop-blur-sm rounded-lg p-3 shadow-blessed max-w-xs">
-          <p className="text-xs text-muted-foreground italic">
-            "Be strong and courageous! Do not be afraid" 
-            <span className="text-primary font-semibold"> - Joshua 1:9</span>
-          </p>
-        </div>
+        <div className="absolute inset-0 bg-gradient-radiance"></div>
+        <div className="absolute inset-0 bg-gradient-celestial opacity-20"></div>
       </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">

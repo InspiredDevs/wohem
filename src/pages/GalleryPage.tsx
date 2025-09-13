@@ -18,6 +18,13 @@ import worship12 from "@/assets/worship-12.jpg";
 import worship13 from "@/assets/worship-13.jpg";
 import worship14 from "@/assets/worship-14.jpg";
 import worship15 from "@/assets/worship-15.jpg";
+import worship24 from "@/assets/worship-24.jpg";
+import worship25 from "@/assets/worship-25.jpg";
+import worship26 from "@/assets/worship-26.jpg";
+import worship27 from "@/assets/worship-27.jpg";
+import worship28 from "@/assets/worship-28.jpg";
+import worship29 from "@/assets/worship-29.jpg";
+import worship30 from "@/assets/worship-30.jpg";
 
 const GalleryPage = () => {
   const worshipImages = [
@@ -95,6 +102,41 @@ const GalleryPage = () => {
       src: worship15,
       title: "Morning Prayer",
       description: "Starting each day with prayer and devotion in God's presence"
+    },
+    {
+      src: worship24,
+      title: "Worship Ministry",
+      description: "Passionate worship led by our talented musicians and singers"
+    },
+    {
+      src: worship25,
+      title: "Women's Fellowship",
+      description: "Sisters united in faith, prayer, and spiritual growth together"
+    },
+    {
+      src: worship26,
+      title: "Congregational Praise",
+      description: "The entire church family lifting voices in unified worship"
+    },
+    {
+      src: worship27,
+      title: "Youth Ministry",
+      description: "Young voices joining together in contemporary worship and praise"
+    },
+    {
+      src: worship28,
+      title: "Altar Ministry",
+      description: "Pastoral care and prayer at the altar of worship"
+    },
+    {
+      src: worship29,
+      title: "Pastoral Leadership",
+      description: "Pastor Emmanuel leading the congregation in worship and praise"
+    },
+    {
+      src: worship30,
+      title: "Musical Excellence",
+      description: "Our skilled musicians creating beautiful worship atmospheres"
     }
   ];
 
