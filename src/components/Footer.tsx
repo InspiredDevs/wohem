@@ -1,12 +1,14 @@
 import { Heart, Phone, Mail, MapPin, Clock, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Our Pastor", href: "#pastor" },
-    { name: "Ministries", href: "#ministries" },
-    { name: "Service Times", href: "#schedule" },
-    { name: "Contact Us", href: "#contact" }
+    { name: "About", href: "/about" },
+    { name: "Pastor", href: "/pastor" },
+    { name: "Ministries", href: "/ministries" },
+    { name: "Schedule", href: "/schedule" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" }
   ];
 
   const serviceInfo = [
@@ -76,12 +78,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href}
+                  <Link 
+                    to={link.href}
                     className="text-sm opacity-90 hover:opacity-100 transition-opacity duration-300"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
