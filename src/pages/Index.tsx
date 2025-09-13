@@ -168,7 +168,7 @@ const Index = () => {
                     <Heart className="mr-3 h-6 w-6" />
                     Visit Us This Sunday
                   </Button>
-                  <Button variant="outline" size="lg" className="text-lg px-10 py-6 border-white/30 text-primary-foreground hover:bg-white/15 hover-blessed shadow-blessed animate-sacred-breathe">
+                  <Button variant="outline" size="lg" className="text-lg px-10 py-6 border-white/50 text-white hover:bg-white/20 hover-blessed shadow-blessed animate-sacred-breathe">
                     <BookOpen className="mr-3 h-6 w-6" />
                     Learn More About WOHEM
                   </Button>

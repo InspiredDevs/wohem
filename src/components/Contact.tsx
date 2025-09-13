@@ -5,14 +5,6 @@ import { MapPin, Phone, Mail, Globe, Facebook, Clock, Users } from "lucide-react
 const Contact = () => {
   const contactMethods = [
     {
-      icon: MapPin,
-      title: "Visit Us",
-      primary: "Bryant Street Methodist Church & Community Centre",
-      secondary: "Bryant Street, Stratford, London, E15 4RU",
-      action: "Get Directions",
-      gradient: "bg-gradient-holy"
-    },
-    {
       icon: Phone,
       title: "Call Us",
       primary: "07908 463710",
@@ -27,14 +19,6 @@ const Contact = () => {
       secondary: "We respond within 24 hours",
       action: "Send Email",
       gradient: "bg-gradient-holy"
-    },
-    {
-      icon: Globe,
-      title: "Website",
-      primary: "www.wohem.org",
-      secondary: "Visit our official website",
-      action: "Visit Site",
-      gradient: "bg-gradient-divine"
     }
   ];
 
@@ -71,7 +55,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Methods Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-2xl mx-auto">
           {contactMethods.map((contact, index) => (
             <Card key={index} className="hover-blessed border-border shadow-blessed group animate-divine-rise">
               <CardHeader className="text-center pb-4">
