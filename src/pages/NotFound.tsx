@@ -28,7 +28,7 @@ const NotFound = () => {
         
         {/* Message */}
         <div className="mb-12 animate-blessed-fade">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient-heavenly animate-grace-bounce">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient-heavenly">
             Page Not Found
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8 animate-divine-rise">

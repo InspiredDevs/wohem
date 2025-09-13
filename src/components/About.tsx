@@ -72,7 +72,7 @@ const About = () => {
         {/* About Description */}
         <div className="bg-card rounded-2xl p-8 md:p-12 mb-16 shadow-holy border border-border animate-divine-rise">
           <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-gradient-divine animate-grace-bounce">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-gradient-divine">
               Our Foundation
             </h3>
             <p className="text-lg leading-relaxed text-foreground mb-6">

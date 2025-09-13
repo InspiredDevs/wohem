@@ -17,7 +17,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
               alt="WOHEM Church Logo" 
-              className="mx-auto h-32 w-auto mb-6 animate-holy-glow hover-divine"
+              className="mx-auto h-32 w-auto mb-6"
             />
           </div>
 
@@ -41,12 +41,12 @@ const Hero = () => {
 
           {/* Scripture Quote */}
           <div className="relative bg-card/90 backdrop-blur-md rounded-3xl p-8 mb-8 shadow-divine border-2 border-primary/20 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-celestial opacity-10 animate-spirit-flow"></div>
+            <div className="absolute inset-0 bg-gradient-celestial opacity-10"></div>
             <div className="relative z-10">
-              <div className="flex items-center justify-center mb-4 animate-sacred-breathe">
-                <Star className="h-6 w-6 text-primary mr-3 animate-heavenly-orbit" />
+              <div className="flex items-center justify-center mb-4">
+                <Star className="h-6 w-6 text-primary mr-3" />
                 <span className="text-base font-bold text-gradient-holy">Scripture Foundation</span>
-                <Star className="h-6 w-6 text-primary ml-3 animate-heavenly-orbit" />
+                <Star className="h-6 w-6 text-primary ml-3" />
               </div>
               <p className="text-xl italic text-foreground leading-relaxed font-medium mb-4">
                 "And a highway shall be there, and it shall be called the Way of Holiness; 
@@ -58,7 +58,7 @@ const Hero = () => {
 
           {/* Vision Statement */}
           <div className="relative bg-gradient-sanctuary backdrop-blur-md rounded-3xl p-10 mb-8 shadow-divine border border-primary/30 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-ethereal animate-glory-wave"></div>
+            <div className="absolute inset-0 bg-gradient-ethereal"></div>
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-6">
                 <Star className="h-6 w-6 text-primary mr-3" />

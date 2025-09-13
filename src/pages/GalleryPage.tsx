@@ -85,8 +85,8 @@ const GalleryPage = () => {
     },
     {
       src: worship12,
-      title: "Music Ministry",
-      description: "Our musicians creating an atmosphere of worship through sacred music"
+      title: "Instrumental Worship",
+      description: "Skilled instrumentalists creating beautiful melodies for worship"
     },
     {
       src: worship13,
@@ -120,8 +120,8 @@ const GalleryPage = () => {
     },
     {
       src: worship27,
-      title: "Youth Ministry",
-      description: "Young voices joining together in contemporary worship and praise"
+      title: "Young Generation",
+      description: "Our youth actively participating in church activities and growth"
     },
     {
       src: worship28,
@@ -188,7 +188,7 @@ const GalleryPage = () => {
               <Card className="bg-gradient-holy text-primary-foreground p-8 shadow-divine animate-holy-float">
                 <CardContent className="p-0">
                   <div className="flex items-center justify-center mb-4">
-                    <Camera className="h-6 w-6 mr-2 animate-grace-bounce" />
+                    <Camera className="h-6 w-6 mr-2" />
                     <h3 className="text-2xl font-bold">Join Our Worship Experience</h3>
                     <Heart className="h-6 w-6 ml-2 animate-sanctuary-pulse" />
                   </div>
