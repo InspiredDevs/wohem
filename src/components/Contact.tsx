@@ -10,7 +10,17 @@ const Contact = () => {
       primary: "07908 463710",
       secondary: "07961 718754",
       action: "Call Now",
-      gradient: "bg-gradient-divine"
+      gradient: "bg-gradient-divine",
+      onClick: () => window.open('tel:+447908463710', '_self')
+    },
+    {
+      icon: MapPin,
+      title: "Visit Us",
+      primary: "12 Bryant Street",
+      secondary: "London E15 4RU",
+      action: "Get Directions",
+      gradient: "bg-gradient-sanctuary",
+      onClick: () => window.open('https://maps.google.com/?q=12+Bryant+Street,+London+E15+4RU', '_blank')
     },
     {
       icon: Mail,
@@ -18,7 +28,8 @@ const Contact = () => {
       primary: "info@wohem.org",
       secondary: "We respond within 24 hours",
       action: "Send Email",
-      gradient: "bg-gradient-holy"
+      gradient: "bg-gradient-holy",
+      onClick: () => window.open('mailto:info@wohem.org', '_self')
     }
   ];
 
@@ -55,7 +66,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Methods Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-2xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
           {contactMethods.map((contact, index) => (
             <Card key={index} className="hover-blessed border-border shadow-blessed group animate-divine-rise">
               <CardHeader className="text-center pb-4">
@@ -71,6 +82,7 @@ const Contact = () => {
                   variant="outline" 
                   size="sm" 
                   className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                  onClick={contact.onClick}
                 >
                   {contact.action}
                 </Button>

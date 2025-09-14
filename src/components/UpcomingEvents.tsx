@@ -26,6 +26,7 @@ const UpcomingEvents = () => {
                 src={eventImage}
                 alt="21 Days Prophetic & Revival Event"
                 className="w-full h-auto object-contain"
+                loading="lazy"
               />
             </div>
             
@@ -70,7 +71,11 @@ const UpcomingEvents = () => {
                     </div>
                   </div>
                   
-                  <Button variant="secondary" className="w-full mt-6 hover-blessed">
+                  <Button 
+                    variant="secondary" 
+                    className="w-full mt-6 hover-blessed"
+                    onClick={() => window.open('https://zoom.us/j/wohem', '_blank')}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Join Zoom Meeting
                   </Button>

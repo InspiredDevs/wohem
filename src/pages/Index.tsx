@@ -93,11 +93,12 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="relative overflow-hidden rounded-3xl shadow-divine animate-divine-rise">
-            <img
-              src={pastorHeroImage}
-              alt="Pastor Emmanuel Olafisoye - The Way of Holiness Endtime Ministry"
-              className="w-full h-auto object-contain"
-            />
+              <img
+                src={pastorHeroImage}
+                alt="Pastor Emmanuel Olafisoye - The Way of Holiness Endtime Ministry"
+                className="w-full h-auto object-contain"
+                loading="eager"
+              />
           </div>
         </div>
       </section>

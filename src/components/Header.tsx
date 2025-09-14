@@ -31,6 +31,7 @@ const Header = () => {
                 src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
                 alt="WOHEM Church Logo" 
                 className="h-12 w-auto"
+                loading="eager"
               />
             </div>
             <div className="hidden md:block">
@@ -58,9 +59,11 @@ const Header = () => {
               </Link>
             ))}
             <ThemeToggle />
-            <Button variant="default" className="bg-gradient-celestial hover:opacity-90 transition-opacity animate-sacred-breathe shadow-holy">
-              Join Us
-            </Button>
+            <Link to="/contact">
+              <Button variant="default" className="bg-gradient-celestial hover:opacity-90 transition-opacity animate-sacred-breathe shadow-holy">
+                Join Us
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -90,9 +93,11 @@ const Header = () => {
               ))}
               <div className="flex items-center justify-between pt-4">
                 <ThemeToggle />
-                <Button variant="default" className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow">
-                  Join Us
-                </Button>
+                <Link to="/contact">
+                  <Button variant="default" className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow">
+                    Join Us
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
