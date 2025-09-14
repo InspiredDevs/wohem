@@ -96,7 +96,7 @@ const Index = () => {
             <img
               src={pastorHeroImage}
               alt="Pastor Emmanuel Olafisoye - The Way of Holiness Endtime Ministry"
-              className="w-full h-64 md:h-80 lg:h-96 object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
