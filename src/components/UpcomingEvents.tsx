@@ -25,9 +25,8 @@ const UpcomingEvents = () => {
               <img
                 src={eventImage}
                 alt="21 Days Prophetic & Revival Event"
-                className="w-full h-64 md:h-80 lg:h-96 object-cover"
+                className="w-full h-auto object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             </div>
             
             <CardContent className="p-8">
