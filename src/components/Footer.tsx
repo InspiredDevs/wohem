@@ -88,13 +88,6 @@ const Footer = () => {
               ))}
             </ul>
 
-            <div className="mt-6">
-              <h5 className="font-semibold mb-3">Phone Conference</h5>
-              <div className="text-sm space-y-1 opacity-90">
-                <p>📞 0330 088 1934</p>
-                <p>Access Code: 297769#</p>
-              </div>
-            </div>
           </div>
 
           {/* Service Times */}

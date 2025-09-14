@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Baby, Users, UserCheck, BookOpen, Music, Heart } from "lucide-react";
 import BibleVerse from "./BibleVerse";
+import UpcomingEvents from "./UpcomingEvents";
 
 const Ministries = () => {
   const ministries = [
@@ -142,58 +143,7 @@ const Ministries = () => {
           ))}
         </div>
 
-        {/* Music Ministry Details */}
-        <div className="mt-16 bg-card rounded-2xl p-8 shadow-holy border border-border animate-blessed-fade">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-gradient-divine mb-4">
-              Bridge Music Arts
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              Professional music lessons for all ages and skill levels
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { instrument: "Keyboards", level: "All Levels", image: "/lovable-uploads/keyboard.jpg" },
-              { instrument: "Acoustic Guitar", level: "Beginner to Advanced", image: "/lovable-uploads/acoustic-guitar.jpg" },
-              { instrument: "Bass Guitar", level: "All Levels", image: "/lovable-uploads/bass-guitar.jpg" },
-              { instrument: "Drums", level: "All Ages", image: "/lovable-uploads/drums.jpg" }
-            ].map((item, index) => (
-              <div key={index} className="text-center p-6 rounded-xl bg-muted/30 hover-blessed group overflow-hidden">
-                <div className="relative mb-4 rounded-lg overflow-hidden shadow-blessed">
-                  <img 
-                    src={item.image} 
-                    alt={item.instrument}
-                    className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-holy/20 group-hover:bg-gradient-holy/10 transition-all duration-300"></div>
-                </div>
-                <h4 className="font-semibold mb-2 text-gradient-holy">{item.instrument}</h4>
-                <p className="text-sm text-muted-foreground">{item.level}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Bible Verse about Music */}
-          <div className="mt-8 p-6 bg-gradient-sanctuary rounded-xl border border-border animate-blessed-fade">
-            <div className="flex items-center justify-center mb-3">
-              <Music className="h-5 w-5 text-primary mr-2 animate-sanctuary-pulse" />
-              <span className="text-sm font-semibold text-primary">Musical Ministry Scripture</span>
-              <Music className="h-5 w-5 text-primary ml-2 animate-sanctuary-pulse" />
-            </div>
-            <p className="text-sm italic text-foreground mb-2">
-              "Let the high praises of God be in their mouth, and a two-edged sword in their hand"
-            </p>
-            <p className="text-xs text-primary font-semibold">- Psalm 149:6 (KJV)</p>
-          </div>
-
-          <div className="text-center mt-8 p-6 bg-gradient-divine text-secondary-foreground rounded-xl">
-            <p className="font-semibold mb-2">Contact Bridge Music Arts</p>
-            <p className="text-sm">📞 07951 192016 | ✉️ music@designbridgeintl.com</p>
-            <p className="text-sm">🌐 www.designbridgeintl.com</p>
-          </div>
-        </div>
+        <UpcomingEvents />
       </div>
     </section>
   );

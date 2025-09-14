@@ -1,8 +1,10 @@
 import Layout from "@/components/Layout";
 import Hero from "@/components/Hero";
+import UpcomingEvents from "@/components/UpcomingEvents";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import pastorHeroImage from "@/assets/pastor-hero.jpg";
 import { 
   Heart, 
   Users, 
@@ -86,6 +88,37 @@ const Index = () => {
   return (
     <Layout>
       <Hero />
+      
+      {/* Pastor Hero Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="relative overflow-hidden rounded-3xl shadow-divine animate-divine-rise">
+            <img
+              src={pastorHeroImage}
+              alt="Pastor Emmanuel Olafisoye - The Way of Holiness Endtime Ministry"
+              className="w-full h-64 md:h-80 lg:h-96 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent flex items-center">
+              <div className="text-white p-8 md:p-12 max-w-2xl">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 animate-glory-wave">
+                  Welcome to WOHEM
+                </h2>
+                <p className="text-lg md:text-xl mb-6 opacity-95 leading-relaxed">
+                  The Way of Holiness Endtime Ministry - House of Praise. 
+                  Established 10.10.2010 under the leadership of Prophet Emmanuel Olafisoye, Minister in Charge.
+                </p>
+                <Link to="/pastor">
+                  <Button variant="secondary" size="lg" className="hover-blessed animate-sacred-breathe">
+                    Meet Our Pastor
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <UpcomingEvents />
       
       {/* Quick Links Section */}
       <section className="py-20 bg-background/50 backdrop-blur-sm">
