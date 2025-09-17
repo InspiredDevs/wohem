@@ -20,7 +20,6 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-primary/30 shadow-divine">
-
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4 relative">
         <div className="flex justify-between items-center">
@@ -51,19 +50,23 @@ const Header = () => {
                 }`}
               >
                 <span className="relative z-10">{item.name}</span>
-                <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-celestial scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                <div className="absolute inset-0 bg-gradient-sanctuary opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-500 -z-10 animate-glory-wave"></div>
+                {/* <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-celestial scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div> */}
+                {/* <div className="absolute inset-0 bg-gradient-sanctuary opacity-0 group-hover:opacity-20 rounded-lg transition-opacity duration-500 -z-10 animate-glory-wave"></div> */}
                 {location.pathname === item.href && (
                   <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-celestial animate-divine-rise" />
                 )}
               </Link>
             ))}
             <ThemeToggle />
-            <Link to="/contact">
-              <Button variant="default" className="bg-gradient-celestial hover:opacity-90 transition-opacity animate-sacred-breathe shadow-holy">
+            <Button
+              variant="default"
+              className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow"
+              asChild
+            >
+              <Link to="/contact">
                 Join Us
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,11 +96,15 @@ const Header = () => {
               ))}
               <div className="flex items-center justify-between pt-4">
                 <ThemeToggle />
-                <Link to="/contact">
-                  <Button variant="default" className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow">
+                <Button
+                  variant="default"
+                  className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow"
+                  asChild
+                >
+                  <Link to="/contact">
                     Join Us
-                  </Button>
-                </Link>
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>

@@ -31,113 +31,113 @@ const GalleryPage = () => {
     {
       src: worship1,
       title: "Fellowship & Community",
-      description: "Our church family gathering together in love and unity"
+      description: "Our church family gathering together in love and unity",
     },
     {
       src: worship2,
       title: "Pastoral Ministry",
-      description: "Pastor Emmanuel ministering with anointing and spiritual authority"
+      description: "Pastor Emmanuel ministering with anointing and spiritual authority",
     },
     {
       src: worship3,
       title: "Worship & Praise",
-      description: "Congregation lifting hands in unified worship and praise to God"
+      description: "Congregation lifting hands in unified worship and praise to God",
     },
     {
       src: worship4,
       title: "Prophetic Ministry",
-      description: "Ministering under the anointing with prophetic utterances"
+      description: "Ministering under the anointing with prophetic utterances",
     },
     {
       src: worship5,
       title: "Church Celebration",
-      description: "Celebrating God's goodness together as one church family"
+      description: "Celebrating God's goodness together as one church family",
     },
     {
       src: worship6,
       title: "Musical Worship",
-      description: "Our musicians creating an atmosphere of worship through sacred music"
+      description: "Our musicians creating an atmosphere of worship through sacred music",
     },
     {
       src: worship7,
       title: "Community & Children",
-      description: "Welcoming families and children into our loving church community"
+      description: "Welcoming families and children into our loving church community",
     },
     {
       src: worship8,
       title: "Men's Fellowship",
-      description: "Brothers gathering for fellowship, prayer, and spiritual growth"
+      description: "Brothers gathering for fellowship, prayer, and spiritual growth",
     },
     {
       src: worship9,
       title: "Youth Worship",
-      description: "Our young generation passionately worshipping with contemporary praise"
+      description: "Our young generation passionately worshipping with contemporary praise",
     },
     {
       src: worship10,
       title: "Community Outreach",
-      description: "Serving our community with love and compassion through charity work"
+      description: "Serving our community with love and compassion through charity work",
     },
     {
       src: worship11,
       title: "Healing Ministry",
-      description: "Praying for healing and restoration through the power of faith"
+      description: "Praying for healing and restoration through the power of faith",
     },
     {
       src: worship12,
       title: "Instrumental Worship",
-      description: "Skilled instrumentalists creating beautiful melodies for worship"
+      description: "Skilled instrumentalists creating beautiful melodies for worship",
     },
     {
       src: worship13,
       title: "Family Worship",
-      description: "Generations coming together to worship God as one church family"
+      description: "Generations coming together to worship God as one church family",
     },
     {
       src: worship14,
       title: "Altar Call",
-      description: "Lives being transformed as people respond to God's calling"
+      description: "Lives being transformed as people respond to God's calling",
     },
     {
       src: worship15,
       title: "Morning Prayer",
-      description: "Starting each day with prayer and devotion in God's presence"
+      description: "Starting each day with prayer and devotion in God's presence",
     },
     {
       src: worship24,
       title: "Worship Ministry",
-      description: "Passionate worship led by our talented musicians and singers"
+      description: "Passionate worship led by our talented musicians and singers",
     },
     {
       src: worship25,
       title: "Women's Fellowship",
-      description: "Sisters united in faith, prayer, and spiritual growth together"
+      description: "Sisters united in faith, prayer, and spiritual growth together",
     },
     {
       src: worship26,
       title: "Congregational Praise",
-      description: "The entire church family lifting voices in unified worship"
+      description: "The entire church family lifting voices in unified worship",
     },
     {
       src: worship27,
       title: "Young Generation",
-      description: "Our youth actively participating in church activities and growth"
+      description: "Our youth actively participating in church activities and growth",
     },
     {
       src: worship28,
       title: "Altar Ministry",
-      description: "Pastoral care and prayer at the altar of worship"
+      description: "Pastoral care and prayer at the altar of worship",
     },
     {
       src: worship29,
       title: "Pastoral Leadership",
-      description: "Pastor Emmanuel leading the congregation in worship and praise"
+      description: "Pastor Emmanuel leading the congregation in worship and praise",
     },
     {
       src: worship30,
       title: "Musical Excellence",
-      description: "Our skilled musicians creating beautiful worship atmospheres"
-    }
+      description: "Our skilled musicians creating beautiful worship atmospheres",
+    },
   ];
 
   return (
@@ -153,8 +153,7 @@ const GalleryPage = () => {
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 Witness the beauty of worship and fellowship at WOHEM Church
               </p>
-              
-              <BibleVerse 
+              <BibleVerse
                 verse="Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name"
                 reference="Psalm 100:4 (NIV)"
                 className="max-w-2xl mx-auto"
@@ -164,11 +163,11 @@ const GalleryPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {worshipImages.map((image, index) => (
                 <Card key={index} className="hover-blessed border-border shadow-blessed animate-divine-rise overflow-hidden group">
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden aspect-w-4 aspect-h-3">
                     <img
                       src={image.src}
                       alt={image.title}
-                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
@@ -193,7 +192,7 @@ const GalleryPage = () => {
                     <Heart className="h-6 w-6 ml-2 animate-sanctuary-pulse" />
                   </div>
                   <p className="text-lg mb-6">
-                    Come and be part of our vibrant community where every service is filled with 
+                    Come and be part of our vibrant community where every service is filled with
                     God's presence, love, and transformative power.
                   </p>
                   <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">

@@ -1,14 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Globe, Facebook, Clock, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const contactMethods = [
     {
       icon: Phone,
       title: "Call Us",
-      primary: "07908 463710",
-      secondary: "07961 718754",
+      primary: "07961 718754",
+      secondary: "07908 463710",
       action: "Call Now",
       gradient: "bg-gradient-divine",
       onClick: () => window.open('tel:+447908463710', '_self')
@@ -19,17 +20,17 @@ const Contact = () => {
       primary: "12 Bryant Street",
       secondary: "London E15 4RU",
       action: "Get Directions",
-      gradient: "bg-gradient-sanctuary",
+      gradient: "bg-gradient-holy",
       onClick: () => window.open('https://maps.google.com/?q=12+Bryant+Street,+London+E15+4RU', '_blank')
     },
     {
       icon: Mail,
       title: "Email Us",
-      primary: "info@wohem.org",
+      primary: "Wohem_admin@btinternet.com",
       secondary: "We respond within 24 hours",
       action: "Send Email",
       gradient: "bg-gradient-holy",
-      onClick: () => window.open('mailto:info@wohem.org', '_self')
+      onClick: () => window.open('mailto:Wohem_admin@btinternet.com', '_self')
     }
   ];
 
@@ -150,8 +151,13 @@ const Contact = () => {
                       <p className="text-sm text-muted-foreground mb-4">
                         Search for: <span className="font-semibold text-primary">Emmanuel Dare Olafisoye</span>
                       </p>
-                      <Button className="w-full bg-gradient-holy hover:opacity-90">
-                        Follow on Facebook
+                      <Button 
+                        className="w-full bg-gradient-holy text-primary-foreground hover:opacity-90 transition-all duration-300"
+                        asChild
+                      >
+                        <Link to="https://www.facebook.com/emmanuel.olafisoye" target="_blank">
+                          Follow on Facebook
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
@@ -163,7 +169,8 @@ const Contact = () => {
                       <p className="mb-6">
                         Our pastoral team is here to pray with you and provide spiritual support.
                       </p>
-                      <Button 
+                      <Button       
+                        onClick={() => window.open('mailto:Wohem_admin@btinternet.com', '_self')}
                         variant="outline" 
                         className="w-full border-white text-white hover:bg-white hover:text-secondary bg-transparent"
                       >
@@ -186,21 +193,7 @@ const Contact = () => {
             <p className="text-lg mb-6 opacity-90">
               Come and experience the love of Christ in a welcoming, multicultural community
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-transparent border-white text-white hover:bg-white hover:text-primary"
-              >
-                Plan Your Visit
-              </Button>
-              <Button 
-                size="lg" 
-                className="bg-white text-primary hover:bg-white/90"
-              >
-                Contact Pastor
-              </Button>
-            </div>
+            
           </div>
         </div>
       </div>

@@ -184,12 +184,6 @@ const Index = () => {
                     <Heart className="mr-3 h-6 w-6" />
                     Visit Us This Sunday
                   </Button>
-                  <Link to="/about">
-                    <Button variant="outline" size="lg" className="text-lg px-10 py-6 border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground/20 hover-blessed shadow-blessed animate-sacred-breathe">
-                      <BookOpen className="mr-3 h-6 w-6" />
-                      Learn More About WOHEM
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>

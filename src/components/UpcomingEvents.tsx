@@ -74,7 +74,7 @@ const UpcomingEvents = () => {
                   <Button 
                     variant="secondary" 
                     className="w-full mt-6 hover-blessed"
-                    onClick={() => window.open('https://zoom.us/j/wohem', '_blank')}
+                    onClick={() => window.open('https://us02web.zoom.us/j/8183032171?pwd=TW9XEeFIA25tZvNttjM3YmXLWXdGdz09', '_blank')}
                   >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Join Zoom Meeting

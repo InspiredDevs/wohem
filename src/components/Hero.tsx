@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Heart, Users, BookOpen, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-celestial opacity-20"></div>
       </div>
 
-        <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
@@ -68,7 +69,10 @@ const Hero = () => {
               <p className="text-xl md:text-2xl text-foreground leading-relaxed font-semibold text-center">
                 <span className="text-gradient-celestial">"Empowering people to empower others"</span>
                 <span className="text-primary mx-3">•</span>
+                <br />
+                <span className="text-primary mx-3">•</span>
                 <span className="text-gradient-heavenly">"Raising future leaders"</span>
+                <br />
                 <span className="text-secondary mx-3">•</span>
                 <span className="text-gradient-divine">"Rebuilding families and refining society through the love of Christ"</span>
               </p>
@@ -98,17 +102,23 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-holy hover:opacity-90 transition-all duration-300 text-lg px-8 py-4 hover-blessed"
+              asChild
             >
-              <Heart className="mr-2 h-5 w-5" />
-              Join Our Family
+              <Link to="/contact">
+                <Heart className="mr-2 h-5 w-5" />
+                Join Our Family
+              </Link>
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-4 hover-blessed"
+              asChild
             >
-              <BookOpen className="mr-2 h-5 w-5" />
-              Learn More
+              <Link to="/about">
+                <BookOpen className="mr-2 h-5 w-5" />
+                Learn More
+              </Link>
             </Button>
           </div>
 
