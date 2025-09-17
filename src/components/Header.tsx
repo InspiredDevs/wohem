@@ -27,20 +27,16 @@ const Header = () => {
           <div className="flex items-center space-x-3 group hover-blessed">
             <div className="relative">
               <img 
-                src="./src/assets/wohem-logo.png" 
+                src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
                 alt="WOHEM Church Logo" 
                 className="h-12 w-auto"
                 loading="eager"
               />
             </div>
-            <Link
-            href="/home"
-            >
-              <div className="hidden md:block">
-                <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
-                <p className="text-sm text-muted-foreground">House of Praise</p>
+            <div className="hidden md:block">
+              <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
+              <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
-            </Link>
           </div>
 
           {/* Desktop Navigation */}

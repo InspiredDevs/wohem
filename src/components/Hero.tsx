@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="./src/assets/wohem-logo.png" 
+              src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
               alt="WOHEM Church Logo" 
               className="mx-auto h-32 w-auto mb-6"
             />
