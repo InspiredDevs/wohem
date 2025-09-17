@@ -33,10 +33,14 @@ const Header = () => {
                 loading="eager"
               />
             </div>
-            <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
-              <p className="text-sm text-muted-foreground">House of Praise</p>
+            <Link
+            href="/home"
+            >
+              <div className="hidden md:block">
+                <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
+                <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
