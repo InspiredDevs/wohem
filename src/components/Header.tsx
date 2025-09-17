@@ -27,7 +27,7 @@ const Header = () => {
           <div className="flex items-center space-x-3 group hover-blessed">
             <div className="relative">
               <img 
-                src="/lovable-uploads/fda28a5a-8a25-48d6-b45c-22555f2d8339.png" 
+                src="./src/assets/wohem-logo.png" 
                 alt="WOHEM Church Logo" 
                 className="h-12 w-auto"
                 loading="eager"
