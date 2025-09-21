@@ -151,7 +151,7 @@ const Schedule = () => {
         </div>
 
         {/* Phone & Online Programs */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {/* Telephone Conference */}
           <Card className="border-border shadow-blessed animate-divine-rise">
             <CardHeader className="text-center">
@@ -187,14 +187,14 @@ const Schedule = () => {
               </div>
               <CardTitle className="text-2xl text-gradient-holy">WhatsApp Conference</CardTitle>
               <div className="bg-muted/50 rounded-lg p-4 mt-4">
-                <p className="font-semibold">Join via WhatsApp</p>
+                <p className="font-semibold mb-2">Join via WhatsApp</p>
                 <a
                   href="https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4?mode=ems_share_t"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-blue-600 hover:underline"
+                  className="inline-block bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
                 >
-                  https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4
+                  Join WhatsApp Group
                 </a>
               </div>
             </CardHeader>
