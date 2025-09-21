@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, Clock, Phone, MapPin, Users, Heart, BookOpen, Star } from "lucide-react";
+import { Calendar, Clock, Phone, Users, Heart, BookOpen, Star } from "lucide-react";
 
 const Schedule = () => {
   const sundayServices = [
@@ -67,8 +67,11 @@ const Schedule = () => {
   const phonePrograms = [
     { title: "Daily Prayer Call", time: "8:00 PM - 8:45 PM", frequency: "Daily" },
     { title: "Night of Wonders", time: "8:00 PM - 9:30 PM", frequency: "1st Friday" },
-    { title: "Intercessory Prayer", time: "9:00 PM - 10:00 PM", frequency: "Every Thursday" },
-    { title: "Hour of Mercy", time: "9:30 PM - 10:30 PM", frequency: "Monthly" }
+    { title: "Intercessory Prayer", time: "9:00 PM - 10:00 PM", frequency: "Every Thursday" }
+  ];
+
+  const whatsappPrograms = [
+    { title: "Hour of Mercy", time: "9:30 PM - 10:30 PM", frequency: "1st to 21st of Each Month" }
   ];
 
   const facebookPrograms = [
@@ -163,6 +166,40 @@ const Schedule = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               {phonePrograms.map((program, index) => (
+                <div key={index} className="flex items-center justify-between p-4 rounded-lg bg-muted/30">
+                  <div>
+                    <h4 className="font-semibold text-primary">{program.title}</h4>
+                    <p className="text-sm text-muted-foreground">{program.time}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-sm font-medium text-secondary">{program.frequency}</p>
+                  </div>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
+          {/* WhatsApp Conference */}
+          <Card className="border-border shadow-blessed animate-divine-rise">
+            <CardHeader className="text-center">
+              <div className="bg-gradient-holy text-primary-foreground p-4 rounded-full w-fit mx-auto mb-4">
+                <Users className="h-6 w-6" />
+              </div>
+              <CardTitle className="text-2xl text-gradient-holy">WhatsApp Conference</CardTitle>
+              <div className="bg-muted/50 rounded-lg p-4 mt-4">
+                <p className="font-semibold">Join via WhatsApp</p>
+                <a
+                  href="https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4?mode=ems_share_t"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue-600 hover:underline"
+                >
+                  https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4
+                </a>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {whatsappPrograms.map((program, index) => (
                 <div key={index} className="flex items-center justify-between p-4 rounded-lg bg-muted/30">
                   <div>
                     <h4 className="font-semibold text-primary">{program.title}</h4>
