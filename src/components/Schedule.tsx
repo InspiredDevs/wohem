@@ -7,7 +7,8 @@ const Schedule = () => {
     { week: "2nd Sunday", service: "Language-Centred Prayer", icon: Users },
     { week: "3rd Sunday", service: "Prophetic Declaration", icon: Star },
     { week: "4th Sunday", service: "Family Sunday & Youth Programme", icon: Users },
-    { week: "5th Sunday", service: "Festival of Praise", icon: Heart }
+    { week: "5th Sunday", service: "Festival of Praise", icon: Heart },
+    { week: "1st-3rd Sunday (June)", service: "Rivers of Living Water", icon: Heart }
   ];
 
   const weeklyPrograms = [
@@ -33,13 +34,6 @@ const Schedule = () => {
     {
       day: "Friday",
       events: [
-        {
-          title: "Holy Ghost Service",
-          time: "9:00 PM - 11:00 PM",
-          type: "Physical Location (3rd Friday)",
-          details: "Royal Youth Centre, Rainham, RM3 9YG",
-          icon: Star
-        },
         {
           title: "Solution Night",
           time: "8:00 PM - 9:30 PM",
@@ -73,7 +67,8 @@ const Schedule = () => {
   const phonePrograms = [
     { title: "Daily Prayer Call", time: "8:00 PM - 8:45 PM", frequency: "Daily" },
     { title: "Night of Wonders", time: "8:00 PM - 9:30 PM", frequency: "1st Friday" },
-    { title: "Intercessory Prayer", time: "9:00 PM - 10:00 PM", frequency: "Every Thursday" }
+    { title: "Intercessory Prayer", time: "9:00 PM - 10:00 PM", frequency: "Every Thursday" },
+    { title: "Hour of Mercy", time: "9:30 PM - 10:30 PM", frequency: "Monthly" }
   ];
 
   const facebookPrograms = [
@@ -106,7 +101,7 @@ const Schedule = () => {
               <p className="text-sm text-muted-foreground">Bryant Street Methodist Church & Community Centre</p>
             </CardHeader>
             <CardContent>
-              <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {sundayServices.map((service, index) => (
                   <div key={index} className="text-center p-6 rounded-xl bg-muted/30 hover-blessed">
                     <div className="bg-gradient-divine text-secondary-foreground p-3 rounded-full w-fit mx-auto mb-4">
@@ -188,9 +183,17 @@ const Schedule = () => {
                 <Users className="h-6 w-6" />
               </div>
               <CardTitle className="text-2xl text-gradient-divine">Facebook Live</CardTitle>
-              <p className="text-sm text-muted-foreground mt-2">
-                Search for Emmanuel Dare Olafisoye
+              <p className="text-lg font-semibold text-primary mt-2">
+                Join our live sessions on Facebook!
               </p>
+              <a
+                href="https://web.facebook.com/emmanuel.olafisoye?_rdc=1&_rdr#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
+              >
+                Watch Live on Facebook
+              </a>
             </CardHeader>
             <CardContent className="space-y-4">
               {facebookPrograms.map((program, index) => (
