@@ -24,6 +24,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
+          <Link to="/" className="flex items-center space-x-3 group hover-blessed">
           <div className="flex items-center space-x-3 group hover-blessed">
             <div className="relative">
               <img 
@@ -31,13 +32,14 @@ const Header = () => {
                 alt="WOHEM Church Logo" 
                 className="h-12 w-auto"
                 loading="eager"
-              />
+                />
             </div>
             <div className="hidden md:block">
               <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
               <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
           </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
