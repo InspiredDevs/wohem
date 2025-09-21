@@ -12,11 +12,9 @@ import worship6 from "@/assets/worship-21.jpg";
 import worship7 from "@/assets/worship-22.jpg";
 import worship8 from "@/assets/worship-23.jpg";
 import worship9 from "@/assets/worship-9.jpg";
-import worship10 from "@/assets/worship-10.jpg";
 import worship11 from "@/assets/worship-11.jpg";
-import worship12 from "@/assets/worship-12.jpg";
-import worship13 from "@/assets/worship-13.jpg";
-import worship14 from "@/assets/worship-14.jpg";
+import worship13 from "@/assets/famworship.png";
+import worship14 from "@/assets/altarcall.png";
 import worship15 from "@/assets/worship-15.jpg";
 import worship24 from "@/assets/worship-24.jpg";
 import worship25 from "@/assets/worship-25.jpg";
@@ -25,6 +23,9 @@ import worship27 from "@/assets/worship-27.jpg";
 import worship28 from "@/assets/worship-28.jpg";
 import worship29 from "@/assets/worship-29.jpg";
 import worship30 from "@/assets/worship-30.jpg";
+import worship31 from "@/assets/outreach.png";
+import worship32 from "@/assets/instrumentalworship.jpg";
+
 
 const GalleryPage = () => {
   const worshipImages = [
@@ -74,7 +75,7 @@ const GalleryPage = () => {
       description: "Our young generation passionately worshipping with contemporary praise",
     },
     {
-      src: worship10,
+      src: worship31,
       title: "Community Outreach",
       description: "Serving our community with love and compassion through charity work",
     },
@@ -84,7 +85,7 @@ const GalleryPage = () => {
       description: "Praying for healing and restoration through the power of faith",
     },
     {
-      src: worship12,
+      src: worship32,
       title: "Instrumental Worship",
       description: "Skilled instrumentalists creating beautiful melodies for worship",
     },
