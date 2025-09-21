@@ -140,7 +140,16 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-sm opacity-75">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-400" />
-              <span>for God's Kingdom</span>
+              <span>love by</span>
+              <a
+                href="https://inspireddevs.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 font-medium hover:text-secondary-glow transition-colors duration-300 opacity-90 hover:opacity-100"
+              >
+                <span className="text-xs font-mono bg-secondary/20 px-1 py-0.5 rounded"> &lt;/&gt;</span>
+                <span>Inspired Devs</span>
+              </a>
             </div>
           </div>
         </div>
