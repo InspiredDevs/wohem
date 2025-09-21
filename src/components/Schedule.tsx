@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Phone, Users, Heart, BookOpen, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Schedule = () => {
   const sundayServices = [
@@ -186,16 +188,19 @@ const Schedule = () => {
                 <Users className="h-6 w-6" />
               </div>
               <CardTitle className="text-2xl text-gradient-holy">WhatsApp Conference</CardTitle>
-              <div className="bg-muted/50 rounded-lg p-4 mt-4">
-                <p className="font-semibold mb-2">Join via WhatsApp</p>
-                <a
-                  href="https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4?mode=ems_share_t"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
+              <div className="mt-4">
+                <Button
+                  className="w-full bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
+                  asChild
                 >
-                  Join WhatsApp Group
-                </a>
+                  <Link
+                    to="https://chat.whatsapp.com/F0zSpAXAXQA4iZECzPOSM4?mode=ems_share_t"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click to Join WhatsApp Group
+                  </Link>
+                </Button>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -220,17 +225,20 @@ const Schedule = () => {
                 <Users className="h-6 w-6" />
               </div>
               <CardTitle className="text-2xl text-gradient-divine">Facebook Live</CardTitle>
-              <p className="text-lg font-semibold text-primary mt-2">
-                Join our live sessions on Facebook!
-              </p>
-              <a
-                href="https://web.facebook.com/emmanuel.olafisoye?_rdc=1&_rdr#"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
-              >
-                Watch Live on Facebook
-              </a>
+              <div className="mt-4">
+                <Button
+                  className="w-full bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
+                  asChild
+                >
+                  <Link
+                    to="https://web.facebook.com/emmanuel.olafisoye?_rdc=1&_rdr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click to Watch on Facebook
+                  </Link>
+                </Button>
+              </div>
             </CardHeader>
             <CardContent className="space-y-4">
               {facebookPrograms.map((program, index) => (

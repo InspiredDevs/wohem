@@ -10,7 +10,7 @@ const Contact = () => {
       title: "Call Us",
       primary: "07961 718754",
       secondary: "07908 463710",
-      action: "Call Now",
+      action: "Click to Call",
       gradient: "bg-gradient-divine",
       onClick: () => window.open('tel:+447908463710', '_self')
     },
@@ -19,7 +19,7 @@ const Contact = () => {
       title: "Visit Us",
       primary: "12 Bryant Street",
       secondary: "London E15 4RU",
-      action: "Get Directions",
+      action: "Click for Directions",
       gradient: "bg-gradient-holy",
       onClick: () => window.open('https://maps.google.com/?q=12+Bryant+Street,+London+E15+4RU', '_blank')
     },
@@ -28,7 +28,7 @@ const Contact = () => {
       title: "Email Us",
       primary: "Wohem_admin@btinternet.com",
       secondary: "We respond within 24 hours",
-      action: "Send Email",
+      action: "Click to Email",
       gradient: "bg-gradient-holy",
       onClick: () => window.open('mailto:Wohem_admin@btinternet.com', '_self')
     }
@@ -152,11 +152,11 @@ const Contact = () => {
                         Search for: <span className="font-semibold text-primary">Emmanuel Dare Olafisoye</span>
                       </p>
                       <Button 
-                        className="w-full bg-gradient-holy text-primary-foreground hover:opacity-90 transition-all duration-300"
+                        className="w-full bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
                         asChild
                       >
                         <Link to="https://www.facebook.com/emmanuel.olafisoye" target="_blank">
-                          Follow on Facebook
+                          Click to Follow on Facebook
                         </Link>
                       </Button>
                     </CardContent>
@@ -174,7 +174,7 @@ const Contact = () => {
                         variant="outline" 
                         className="w-full border-white text-white hover:bg-white hover:text-secondary bg-transparent"
                       >
-                        Request Prayer
+                        Click to Request Prayer
                       </Button>
                     </CardContent>
                   </Card>
@@ -193,7 +193,12 @@ const Contact = () => {
             <p className="text-lg mb-6 opacity-90">
               Come and experience the love of Christ in a welcoming, multicultural community
             </p>
-            
+            <Button
+              className="bg-gradient-divine text-secondary-foreground font-semibold py-3 px-8 rounded-full hover:bg-gradient-holy transition-all duration-300 shadow-holy"
+              onClick={() => window.open('mailto:Wohem_admin@btinternet.com', '_self')}
+            >
+              Click to Contact Us to Join
+            </Button>
           </div>
         </div>
       </div>
