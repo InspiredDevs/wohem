@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 interface LayoutProps {
   children: ReactNode;
@@ -13,6 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="pt-20">
         {children}
       </main>
+      <SpeedInsights />
       <Footer />
     </div>
   );
