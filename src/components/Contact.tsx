@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Globe, Facebook, Clock, Users } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, Facebook, Clock, Users, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
@@ -157,6 +157,32 @@ const Contact = () => {
                       >
                         <Link to="https://www.facebook.com/emmanuel.olafisoye" target="_blank">
                           Click to Follow on Facebook
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+
+                  {/* Instagram */}
+                  <Card className="mb-6 border-border">
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <div className="bg-gradient-holy text-primary-foreground p-3 rounded-lg">
+                          <Instagram className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-lg">Instagram</h4>
+                          <p className="text-sm text-muted-foreground">Follow Pastor Emmanuel</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        @emmanuelolafisoye
+                      </p>
+                      <Button 
+                        className="w-full bg-gradient-holy text-primary-foreground font-semibold py-2 px-6 rounded-full hover:bg-gradient-divine transition-all duration-300 shadow-holy"
+                        asChild
+                      >
+                        <Link to="https://www.instagram.com/emmanuelolafisoye?igsh=MTd6YWhwZXQ0azdxbA==" target="_blank">
+                          Click to Follow on Instagram
                         </Link>
                       </Button>
                     </CardContent>

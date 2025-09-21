@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Mail, MapPin, Copy, Check } from "lucide-react";
+import { Menu, X, Copy, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -11,7 +11,6 @@ const Header = () => {
   const [isCopied, setIsCopied] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Pastor", href: "/pastor" },
     { name: "Ministries", href: "/ministries" },
@@ -23,7 +22,7 @@ const Header = () => {
   const accountDetails = [
     { label: "Account Name", value: "The Way of Holiness Endtime Ministry (WOHEM)" },
     { label: "Account Number", value: "11755250" },
-    { label: "Sort Code", value: "40-09-06" },
+    { label: "Sort Code", value: "400906" },
     { label: "Bank", value: "HSBC" }
   ];
 
@@ -39,10 +38,12 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-primary/30 shadow-divine">
+
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
+          <Link to="/">
           <div className="flex items-center space-x-3 group hover-blessed">
             <div className="relative">
               <img 
@@ -50,13 +51,15 @@ const Header = () => {
                 alt="WOHEM Church Logo" 
                 className="h-12 w-auto"
                 loading="eager"
-              />
+                />
             </div>
             <div className="hidden md:block">
               <h1 className="text-xl font-bold text-gradient-celestial">WOHEM</h1>
               <p className="text-sm text-muted-foreground">House of Praise</p>
             </div>
           </div>
+            </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
@@ -156,7 +159,7 @@ const Header = () => {
             </DialogHeader>
             <div className="py-4 sm:py-6 space-y-4 sm:space-y-6">
               <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                Donate or partner with us to support our homeless project and hospice initiatives. Your generosity helps us spread the love of Christ and make a lasting impact in our community.
+                Support WOHEM’s Homeless Project and Hospice initiatives to provide hope, shelter, and compassionate care to the vulnerable. Your donation restores lives and brings dignity to our community.
               </p>
               <div className="bg-muted/30 p-4 sm:p-6 rounded-lg shadow-blessed">
                 <h3 className="text-base sm:text-lg font-semibold text-primary mb-3 sm:mb-4">Partnership Information</h3>

@@ -60,16 +60,6 @@ const GalleryPage = () => {
       description: "Our musicians creating an atmosphere of worship through sacred music",
     },
     {
-      src: worship7,
-      title: "Community & Children",
-      description: "Welcoming families and children into our loving church community",
-    },
-    {
-      src: worship8,
-      title: "Men's Fellowship",
-      description: "Brothers gathering for fellowship, prayer, and spiritual growth",
-    },
-    {
       src: worship9,
       title: "Youth Worship",
       description: "Our young generation passionately worshipping with contemporary praise",

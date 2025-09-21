@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <Clock className="h-5 w-5 text-primary" />
-                      <span>09:30 - 10:30 AM Daily</span>
+                      <span>09:30 - 10:30 PM Daily</span>
                     </div>
                     <div className="flex items-center gap-3 text-muted-foreground">
                       <MapPin className="h-5 w-5 text-primary" />
