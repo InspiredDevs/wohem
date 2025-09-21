@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -59,6 +64,32 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        foundation: {
+          bg: {
+            light: "hsl(210, 20%, 98%)",
+            dark: "hsl(var(--card))",
+          },
+          border: {
+            light: "hsl(210, 15%, 85%)",
+            dark: "hsl(var(--border))",
+          },
+          gradient: {
+            light: "hsl(200, 50%, 80%)",
+            dark: "hsl(var(--primary))",
+          },
+        },
+        spirit: {
+          light: {
+            from: "hsl(210, 100%, 50%)", // Vivid blue
+            via: "hsl(270, 100%, 50%)", // Bright purple
+            to: "hsl(0, 100%, 50%)", // Pure red
+          },
+          dark: {
+            from: "hsl(220, 100%, 60%)", // Bright cyan-blue
+            via: "hsl(300, 100%, 60%)", // Vibrant magenta
+            to: "hsl(180, 100%, 50%)", // Bright cyan
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,25 +98,47 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "pulse-gradient": {
+          "0%, 100%": { opacity: "0.2" }, // Slightly subtler for background
+          "50%": { opacity: "0.05" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-5px)" },
+        },
+        "blessed-fade": {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "divine-rise": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "sanctuary-pulse": {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+        },
+        "spirit-flow": {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "200% 50%" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-gradient": "pulse-gradient 8s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
+        "blessed-fade": "blessed-fade 1s ease-out forwards",
+        "divine-rise": "divine-rise 0.8s ease-out forwards",
+        "sanctuary-pulse": "sanctuary-pulse 2s ease-in-out infinite",
+        "spirit-flow": "spirit-flow 4s linear infinite",
       },
     },
   },
