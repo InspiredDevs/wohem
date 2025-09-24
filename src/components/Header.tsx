@@ -121,7 +121,13 @@ const Header = () => {
                   )}
                 </Link>
               ))}
-              <ThemeToggle />
+              <Button
+                variant="default"
+                className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow text-xs lg:text-sm px-3 lg:px-4"
+                onClick={() => setIsDonateModalOpen(true)}
+              >
+                Donate
+              </Button>
               <Button
                 variant="default"
                 className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow text-xs lg:text-sm px-3 lg:px-4"
@@ -131,13 +137,7 @@ const Header = () => {
                   Join Us
                 </Link>
               </Button>
-              <Button
-                variant="default"
-                className="bg-gradient-holy hover:opacity-90 transition-opacity animate-holy-glow text-xs lg:text-sm px-3 lg:px-4"
-                onClick={() => setIsDonateModalOpen(true)}
-              >
-                Donate
-              </Button>
+              <ThemeToggle />
             </div>
 
             <button
